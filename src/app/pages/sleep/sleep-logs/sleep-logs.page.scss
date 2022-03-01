@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+.pagecontainer { min-height: 270%;}
+h4{margin:0;font-weight: bolder;}
+.summaryPopup{top:0; border: 4px solid #ed6e2d; width:100%;}
+
+a.subOptions{display:block; font-size:18px; color: #fff; background: #053268;  text-transform: uppercase; border-radius: 15px; margin:10px auto; clear:both; font-weight:normal; padding:15px 0px; border:2px solid #50a7db; width: 90%;}
+
+.matrContainer.blue {
+    border: 2px solid #50a7db;
+    padding: 0px;
+    border-radius: 15px;
+}
+
+.matrContainer.blue .pageTitle {
+    background: #50a7db;
+    color: #fff;
+    padding: 10px 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    border-radius: 13px;
+    margin-top: -1px;
+    margin-bottom: 20px;
+}
+
+.pBanner img{display:block; margin:60px auto 20px; width:60%;}
+.reviewCase{padding:10px;  }
+.reviewCase h5{font-size:18px; color:#fff; text-transform:uppercase; margin-bottom:10px; text-align:left;}
+p.rQuestion{font-size:16px; text-align:left; margin-bottom:15px; padding:0;}
+.rWidget{}
+.rWidget select{display:none;}
+.rBar{display:block; clear:both; border-radius:20px; background:#fff; -webkit-box-shadow: -1px 0px 8px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 0px 8px 0px rgba(0,0,0,0.75);
+box-shadow: -1px 0px 8px 0px rgba(0,0,0,0.75);}
+
+.rBar a{display:inline-block; float:left; width:10%; text-align:center; color:#fff; text-shadow: 0 0 3px #000; padding: 5px 0px 3px; position:relative;}
+.rBar::after{content:""; clear:both; display:block; height:1px; width:100%;}
+.rBar a:hover::before,.activebarpoint::before{content:""; clear:both; display:block;  position: absolute;
+    border-top: 15px solid #fff;
+    border-bottom: 15px solid transparent;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    margin-left: 4px;
+    margin-top: 1px;}
+.rBar a.br-current::before{content:""; clear:both; display:block;  position: absolute;
+    border-top: 15px solid #fff;
+    border-bottom: 15px solid transparent;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    margin-left: 4px;
+    margin-top: 1px;}
+.rWidget input{visibility:hidden;}
+
+.rBar{background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(105,141,184,1) 49%, rgba(162,189,220,1) 70%, rgba(255,255,255,1) 100%); }
+
+.rBarStatus{display:block; clear:both; color:#fff; padding:0px 0px 20px; border-bottom:2px solid #254f81;} .rBarStatus::after{content:""; clear:both; display:block; height:1px; width:100%;}
+.rBarStatus span.rbsLeft{width:50%; display:inline-block; float:left; text-align:left;}
+.rBarStatus span.rbsRight{width:50%; display:inline-block; float:left; text-align:right;}
+
+.sgTabs{clear:both; display:block; width:100%; padding:5%;}  .sgTabs:after{content:""; height:1px; width:100%; clear:both; display:block;}
+.sgTabs div{width:44%; float:left; margin:2%; background:#053268; border:2px solid #50a7db; color:#fff; font-size:18px; text-transform:uppercase; padding:15px 0px; text-align:center; border-radius:10px;}
+
+
+
+
+
+.sleepGoals{text-align:left; color:#fff; padding:2% 5%;}
+.sleepGoals div{margin-bottom:10px; position:relative; font-size: 18px;}
+.sleepGoals div:first-child::after{content:""; height:40px; width:50px; /*background: url(../../../../assets/images/yin-yang-sprite.png) 0px 0px no-repeat;*/ display:block; clear:both; position:absolute; right: 20px; top: -10px; background-size: 150px;}
+.sleepGoals div:nth-child(2)::after{content:""; height:40px; width:50px; /*background: url(../../../../assets/images/yin-yang-sprite.png) 0px -36px no-repeat;*/ display:block; clear:both; position:absolute; right: 20px; top: -10px; background-size: 150px;}
+
+
+.sleepYinyang{clear: both;  display: block;  width: 130px;  height: 200px; margin: 10px auto;}
+.qualityHalf{/*background: url(../../../../assets/images/yin-yang-sprite.png) -7px -18px no-repeat;*/
+    display: block;
+    clear: both;
+    background-size: 450px;
+    width: 130px;
+    height: 80px; background-size:100%;}
+.quantityHalf{/*background: url(../../../../assets/images/yin-yang-sprite.png) -7px -120px no-repeat;*/
+    display: block;
+    clear: both;
+    background-size: 450px;
+    width: 130px;
+    height: 80px; margin-top: -45px; background-size:100%;}
+	
+.qualityHalf.one, .qualityHalf.two, .qualityHalf.three{background: url(../../../../assets/images/yy-black.png) no-repeat;}
+.qualityHalf.four, .qualityHalf.five, .qualityHalf.six{background: url(../../../../assets/images/yy-blue.png) no-repeat;}
+.qualityHalf.seven, .qualityHalf.eight, .qualityHalf.nine, .qualityHalf.ten{background: url(../../../../assets/images/yy-white.png) no-repeat;}
+
+
+.quantityHalf.one, .quantityHalf.two, .quantityHalf.three{background: url(../../../../assets/images/yy-black-D.png) no-repeat; }
+.quantityHalf.four, .quantityHalf.five, .quantityHalf.six{background: url(../../../../assets/images/yy-blue-D.png) no-repeat; }
+.quantityHalf.seven, .quantityHalf.eight, .quantityHalf.nine, .quantityHalf.ten{background: url(../../../../assets/images/yy-white-D.png) no-repeat; }
+
+
+
+.sgTabsMatter{display:none; color:#fff;}
+
+.sleepLogTable{}
+.sleepLogTable .stRow{clear:both; display:block;}
+.sleepLogTable .stRow .stCol{width:14.2%; float:left; display:inline-block;}
+.sleepLogTable .stRow:after{content:""; height:1px; width:100%; display:block; clear:both; }
+
+.stCol .sleepYinyang{clear: both;  display: block;  width: 90%;  height:50px; margin: 10px auto;}
+.stCol .sleepYinyang .qualityHalf{width:100%; height:35px; background-size:100%;}
+.stCol .sleepYinyang .quantityHalf{width:100%; height:35px; margin-top:-22px; background-size:100%;}
+
+@media (min-width:768px){
+	
+	
+}
+
+/***************************************************************************grid*******************************/
+
+@-ms-viewport{width: device-width; }
+
+
+/*
+R #c00000
+O #ff6600
+Y #dccf07
+G #97c255
+B #50a7db
+I #2b035c
+V #7f3f97
+*/

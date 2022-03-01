@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+.summaryPopup{top:0; border: 4px solid #ed6e2d; width:100%;}
+
+a.subOptions{display:block; font-size:18px; color: #fff; background: #053268;  text-transform: uppercase; border-radius: 15px; margin:10px auto; clear:both; font-weight:normal; padding:15px 0px; border:2px solid #ed6e2d; width: 90%;}
+
+.matrContainer.orange {
+    border: 4px solid #ed6e2d;
+    padding: 0px;
+    border-radius: 15px;
+}
+
+.matrContainer.orange .pageTitle {
+    background: #ed6e2d;
+    color: #fff;
+    padding: 10px 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    border-radius: 13px;
+    margin-top: -1px;
+    margin-bottom: 20px;
+}
+
+a.move-orangeButton{
+    width: 90%;
+    margin: 0px auto 20px;
+    color: #fff;
+    font-size: 18px;
+    background: #053268;
+    border: 4px solid #ed6e2d;
+    border-radius: 10px;
+    padding: 15px 0px;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+}
+ul.meter-tabs li{display:inline-block; width:28%; margin-right:2%; border:4px solid  #ed6e2d; border-radius:10px; text-transform:uppercase; cursor:pointer; color:#053268; text-align:center; font-size:17px; position:relative; font-weight:bold; padding: 2%;  }
+
+ul.meter-tabs li.active::after {
+    content: "";
+    width: 50%;
+    height: 30px;
+    clear: both;
+    display: block;
+    background: #ed6e2d;
+    position: absolute;
+    bottom: -32px;
+    left: 25%;
+}
+.abcd{border: 2px solid #ed6e2d;
+        padding: 8px;
+        border-radius:15px;
+        margin: 8px;
+        margin-top: -5px;
+    }
+@media (min-width:768px){
+	
+	
+}
+
+/***************************************************************************grid*******************************/
+
+@-ms-viewport{width: device-width; }
+
+
+/*
+R #c00000
+O #ed6e2d
+Y #f4b13e
+G #97c255
+B #50a7db
+I #2b035c
+V #7f3f97
+*/

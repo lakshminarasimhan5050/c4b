@@ -1,0 +1,24 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <div class="pagecontainer pcmargin">
+    <div class="mainContainer">
+      
+      <div class="myProfileSet">
+        <p class="thead">My Profile</p> 
+        <form #profile="ngForm" id="profileForm" (ngSubmit)="formSubmit(profile)" autocomplete="off">
+          <input [(ngModel)]="username" name="username" type="text" placeholder="Username"/>
+          <input [(ngModel)]="password" name="password" type="password" placeholder="Password"/>
+          <input [(ngModel)]="confirm_password" name="confirm_password" type="password" placeholder="Confirm Password"/>
+          <input [(ngModel)]="phone_number" name="phone_number" type="tel" placeholder="Phone Number"/>
+          <input [(ngModel)]="emergency_phone_number" name="emergency_phone_number" type="tel" placeholder="Emergency Phone"/>
+          <input type="submit" value="Submit"/>
+        </form>
+      </div><!--myProfile Form ends-->
+
+    </div><!--mainContainer-->
+    <div class="clear"></div>
+  </div>
+</ion-content>
+
+<app-footer></app-footer>

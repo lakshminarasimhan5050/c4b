@@ -1,0 +1,49 @@
+@charset "utf-8";
+.pagecontainer { }
+h4{margin:0;font-weight: bolder;}
+.summaryPopup{top:0; width:100%;}
+
+a.subOptions{display:block; font-size:18px; color: #fff; background: #053268;  text-transform: uppercase; border-radius: 15px; margin:10px auto; clear:both; font-weight:normal; padding:15px 0px; border:2px solid #50a7db; width: 90%;}
+
+.matrContainer.blue {
+    border: 2px solid #50a7db;
+    padding: 0px;
+    border-radius: 15px;
+}
+
+.matrContainer.blue .pageTitle {
+    background: #50a7db;
+    color: #fff;
+    padding: 10px 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 13px;
+    margin-top: -1px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 999;
+}
+
+#MeterTabs button{background: #254f81;border-radius: 10px; padding: 12px 0px; display: block;  clear: both;  margin: 20px auto 20px;
+    cursor: pointer; border: 2px solid #3b9bcd;  width: 90%; font-size: 20px;  font-weight: bold;  color: #fff; }
+
+@media (min-width:768px){
+	
+	
+}
+
+/***************************************************************************grid*******************************/
+
+@-ms-viewport{width: device-width; }
+
+
+/*
+R #c00000
+O #ff6600
+Y #dccf07
+G #97c255
+B #50a7db
+I #2b035c
+V #7f3f97
+*/

@@ -1,0 +1,269 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+    <div class="pagecontainer pcmargin">
+
+      <div class="mainContainer">
+
+
+        <div class="matrContainer blue">
+  
+          <div class="pageTitle"><h4><span class="infoPopup"><img src="../../../../assets/images/aboutIconWhite.png"/></span>Sleep Log</h4>
+          
+           <div class="summaryPopup">
+            <span class="closePopup">X</span>
+            <h3>About Sleep Log</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/y5IfmnqI2lE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="readToggle"><img src="../../../../assets/images/readText-icon.png" class="readIcon"/><i>X</i></div>
+            <div class="readMatter">
+            <div class="readMatterInr">
+            <h6>Welcome to Your Stats <br/> Here you will learn:</h6>
+            <p>About Sleep Log</p>
+                    <p>When an incident causes the brain to become emotionally hijacked, reactions are automatic and habitual. We will refer to these incidents as “Stimuli” or “Triggers”. <br/><br/> 
+                By Resetting your Mindset, you can change your habits when incidents trigger unwanted behaviors or reactions. This reset gives you the power to choose a response with careful consideration of the consequence of your actions.
+                </p>
+                
+                <p> A RESET creates the brain-space for an intentional response.<br/>
+                Like a computer getting a re-boot, this is a reset for your brain’s built-in response system.
+                </p>
+                <p>REMOVE “computer” and insert BRAIN!<br/>
+                INCIDENT HAPPENS &raquo; BRAIN IS TRIGGERED &raquo; IMMEDIATE REACTION (Habitual and Automatic)
+                </p><br/>
+                            <h3>RESET</h3>
+                <br/>
+                <p>
+                INCIDENT HAPPENS &raquo; P  A  U  S  E  &raquo;  Use SOS Tool &raquo; INTENTIONAL RESPONSE (Deliberate and Conscious)<br/>
+                Reset Mindset consists of 3 sections: SOS Quick Fix, Process The Emotion and Debrief
+                </p>
+                </div><!--readMatterInr ends-->
+                <button class="deepDive blue">Deep Dive</button><!--deepDive ends-->
+               </div><!--readMatter ends--> 
+            </div><!--summaryPopup-->
+            
+            
+            
+            
+          </div>
+        
+        
+        <div class="pBanner"><img src="../../../../assets/images/sleepLog.png"></div>
+        
+        
+        <div class="reviewCase">
+          <h5>Quality</h5>
+          <p class="rQuestion">How restful was your sleep?</p>
+          <div class="rWidget">
+              <div class="rBar">
+                <a href="javascript:(0)" name="1"  [ngClass]="{'activebarpoint':(intencity==1)}" (click)="changeIntencity(1)">1</a>
+                <a href="javascript:(0)" name="2"  [ngClass]="{'activebarpoint':(intencity==2)}" (click)="changeIntencity(2)">2</a>
+                <a href="javascript:(0)" name="3"  [ngClass]="{'activebarpoint':(intencity==3)}" (click)="changeIntencity(3)">3</a>
+                <a href="javascript:(0)" name="4"  [ngClass]="{'activebarpoint':(intencity==4)}" (click)="changeIntencity(4)">4</a>
+                <a href="javascript:(0)" name="5" [ngClass]="{'activebarpoint':(intencity==5)}" (click)="changeIntencity(5)">5</a>
+                <a href="javascript:(0)" name="6" [ngClass]="{'activebarpoint':(intencity==6)}" (click)="changeIntencity(6)">6</a>
+                <a href="javascript:(0)" name="7" [ngClass]="{'activebarpoint':(intencity==7)}" (click)="changeIntencity(7)">7</a>
+                <a href="javascript:(0)" name="8" [ngClass]="{'activebarpoint':(intencity==8)}" (click)="changeIntencity(8)">8</a>
+                <a href="javascript:(0)" name="9" [ngClass]="{'activebarpoint':(intencity==9)}" (click)="changeIntencity(9)">9</a>
+                <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(intencity==10)}" (click)="changeIntencity(10)">10</a>
+              </div><!--rBar ends-->
+              <input class="br-current-rating" id="qualitySleepVal" type="text" value="0"/>
+              <div class="rBarStatus"><span class="rbsLeft">Fatigued</span> <span class="rbsRight">Refreshed</span></div>
+          </div><!--rWidget ends-->
+        </div><!--reviewCase ends-->
+        
+        
+        <div class="reviewCase">
+          <h5>Quantity</h5>
+          <p class="rQuestion">How many hours did you sleep last night?</p>
+          <div class="rWidget">
+              <div class="rBar">
+                <a href="javascript:(0)" name="1"  [ngClass]="{'activebarpoint':(reaction==1)}" (click)="changeReaction(1)">1</a>
+                <a href="javascript:(0)" name="2"  [ngClass]="{'activebarpoint':(reaction==2)}" (click)="changeReaction(2)">2</a>
+                <a href="javascript:(0)" name="3"  [ngClass]="{'activebarpoint':(reaction==3)}" (click)="changeReaction(3)">3</a>
+                <a href="javascript:(0)" name="4"  [ngClass]="{'activebarpoint':(reaction==4)}" (click)="changeReaction(4)">4</a>
+                <a href="javascript:(0)" name="5" [ngClass]="{'activebarpoint':(reaction==5)}" (click)="changeReaction(5)">5</a>
+                <a href="javascript:(0)" name="6" [ngClass]="{'activebarpoint':(reaction==6)}" (click)="changeReaction(6)">6</a>
+                <a href="javascript:(0)" name="7" [ngClass]="{'activebarpoint':(reaction==7)}" (click)="changeReaction(7)">7</a>
+                <a href="javascript:(0)" name="8" [ngClass]="{'activebarpoint':(reaction==8)}" (click)="changeReaction(8)">8</a>
+                <a href="javascript:(0)" name="9" [ngClass]="{'activebarpoint':(reaction==9)}" (click)="changeReaction(9)">9</a>
+                <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(reaction==10)}" (click)="changeReaction(10)">10</a>
+              </div><!--rBar ends-->
+              <input class="br-current-rating" id="quantitySleepVal" type="text" value="0"/>
+              <div class="rBarStatus"><span class="rbsLeft">Fatigued</span> <span class="rbsRight">Refreshed</span></div>
+          </div><!--rWidget ends-->
+        </div><!--reviewCase ends-->
+        
+        <div class="sleepGoals">
+          <div>Quantity: 7+ Hours </div>
+          <div>Quality: Refreshed </div>
+        </div><!--sleepGoals ends-->
+        
+        <div class="sgTabs"><div id="todaySleep">Today</div> <div id="historySleep">History</div></div><!--sgTabs ends-->
+        
+        <div class="sgTabsMatter" id="todaySleepMatr">
+           
+           <div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf one"></div>
+           </div><!--sleepYinyang ends-->
+        
+        </div><!--sgTabsMatter ends-->
+        
+        
+        <div class="sgTabsMatter" id="historySleepMatr">
+        
+        <div class="sleepLogTable">
+        <div class="stRow">
+            <div class="stCol">S</div>
+            <div class="stCol">M</div>
+            <div class="stCol">T</div>
+            <div class="stCol">W</div>
+            <div class="stCol">TH</div>
+            <div class="stCol">F</div>
+            <div class="stCol">S</div>
+        
+          </div>
+          <div class="stRow">
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf five"></div>
+             <div class="quantityHalf eight"></div>
+           </div><!--sleepYinyang ends--></div>
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf one"></div>
+           </div><!--sleepYinyang ends--></div>
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf one"></div>
+           </div><!--sleepYinyang ends--></div>
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf one"></div>
+           </div><!--sleepYinyang ends--></div>
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf nine"></div>
+           </div><!--sleepYinyang ends--></div>
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf one"></div>
+           </div><!--sleepYinyang ends--></div>
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf one"></div>
+           </div><!--sleepYinyang ends--></div>
+          </div>
+          
+          
+            <div class="stRow">
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf one"></div>
+           </div><!--sleepYinyang ends--></div>
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf one"></div>
+           </div><!--sleepYinyang ends--></div>
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf one"></div>
+           </div><!--sleepYinyang ends--></div>
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf one"></div>
+           </div><!--sleepYinyang ends--></div>
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf one"></div>
+           </div><!--sleepYinyang ends--></div>
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf one"></div>
+           </div><!--sleepYinyang ends--></div>
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf one"></div>
+           </div><!--sleepYinyang ends--></div>
+          </div>
+          
+          
+            <div class="stRow">
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf one"></div>
+           </div><!--sleepYinyang ends--></div>
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf one"></div>
+           </div><!--sleepYinyang ends--></div>
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf one"></div>
+           </div><!--sleepYinyang ends--></div>
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf one"></div>
+           </div><!--sleepYinyang ends--></div>
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf one"></div>
+           </div><!--sleepYinyang ends--></div>
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf one"></div>
+           </div><!--sleepYinyang ends--></div>
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf one"></div>
+           </div><!--sleepYinyang ends--></div>
+          </div>
+          
+          
+            <div class="stRow">
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf one"></div>
+           </div><!--sleepYinyang ends--></div>
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf one"></div>
+           </div><!--sleepYinyang ends--></div>
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf one"></div>
+           </div><!--sleepYinyang ends--></div>
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf one"></div>
+           </div><!--sleepYinyang ends--></div>
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf one"></div>
+           </div><!--sleepYinyang ends--></div>
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf one"></div>
+           </div><!--sleepYinyang ends--></div>
+            <div class="stCol"><div class="sleepYinyang">
+             <div class="qualityHalf seven"></div>
+             <div class="quantityHalf one"></div>
+           </div><!--sleepYinyang ends--></div>
+          </div>
+          
+          
+          
+        </div>
+        
+        
+        </div><!--sgTabsMatter ends-->
+        
+        
+        
+         
+        </div><!--matrContainer-->
+        
+        <div class="clear"></div> 
+      </div>
+    </div><!-- .pagecontainer -->
+</ion-content>
+
+<app-footer></app-footer>

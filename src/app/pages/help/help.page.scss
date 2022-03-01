@@ -1,0 +1,31 @@
+.helpIntro{color:#fff;}
+.helpIntro h4{font-size:18px; font-weight:bold; text-align:center;}
+.helpIntro h4::after{content:""; clear:both; display:block; height:4px; background:#890504; width:80%; margin:15px auto;}
+.helpIntro p{font-size:16px; text-align:center;}
+.helpIntro ul{width:90%; margin:10px auto;}
+.helpIntro ul li{text-align:left; list-style:disc; line-height:30px; font-size:16px;}
+.helpActions{clear:both; display:block;}  .helpActions::after{content:""; clear:both; display:block; height:1px;  width:100%; }
+.helpActions a{display:block; width:45%; margin:1%; float:left; border:4px solid #fff; background:#8fc320; color:#fff; text-transform:uppercase; font-size:18px; text-align:center; border-radius:10px; padding:20px 0px;}
+.helpActions a span{clear:both; display:block; margin-bottom:10px; }
+.helpActions a span img{width:60%; margin:0 auto; display:block; clear:both;}
+.helpSuicidePrevention{display:block;clear:both; border:4px solid #890504; background:#fff; color:#890504; text-transform:capitalize; font-size:18px; text-align:center; border-radius:10px; padding:20px 0px; letter-spacing:3px; font-weight:bold; margin-top:10px;}
+.helpSuicidePrevention span{font-size:24px;}
+@media (min-width:768px){
+	
+	
+}
+
+/***************************************************************************grid*******************************/
+
+@-ms-viewport{width: device-width; }
+
+
+/*
+R #c00000
+O #ed6e2d
+Y #f4b13e
+G #97c255
+B #50a7db
+I #2b035c
+V #7f3f97
+*/

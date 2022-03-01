@@ -1,0 +1,85 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <div class="pagecontainer pcmargin">
+    <div class="mainContainer">
+      <div class="matrContainer blue">
+        <div class="pageTitle">
+          <h4><span class="infoPopup"></span>Self Hypnosis</h4>
+        </div>
+
+        <div class="pBanner">
+          <div  class="vFrame" style="display: none;" id="tFrame">
+            <iframe
+              width="320"
+              height="250"
+              src="https://www.youtube.com/embed/y5IfmnqI2lE"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div  id="tImage">
+            <div class="banner-img">
+              <img src="../../../../assets/images/sm-self-hypnosis.png" />
+              <div class="play-button"  (click)="playVideo()">
+                <img src="../../../../assets/images/playBtn.png" />
+              </div>
+            </div>
+          </div>
+         
+
+          <h3>About Reset Mindset</h3>
+
+          <div class="">
+            <div class="readMatterInr">
+              <h6><b>RESET MINDSET is based on the premise that:</b></h6>
+              <!-- <p> -->
+              <ul>
+                <li>
+                  Emotions are a survival mechanism – they drive behavior. They
+                  are neither good nor bad, merely a reaction to a trigger.
+                </li>
+                <li>
+                  Strong emotions are an indicator that something needs your
+                  attention.
+                </li>
+                <li>
+                  Strong emotions are an indicator that something needs your
+                  attention.
+                </li>
+                <li>
+                  Several emotions can arise at once - focus on the predominant
+                  emotion and name it.
+                </li>
+                <li>Naming it is the first step to processing an emotion.</li>
+                <li>Processed emotions will recede.</li>
+                <li>
+                  nprocessed emotions accumulate and fester causing increased
+                  stress and potentially unwanted behavior.
+                </li>
+              </ul>
+              <!-- </p> -->
+            </div>
+            <!--readMatterInr ends-->
+            <button class="deepDive">Deeper Dive</button>
+            <!--deepDive ends-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--matrContainer-->
+
+    <div class="clear"></div>
+  </div>
+  <!-- .pagecontainer -->
+
+  <!-- <script>
+      function playVideo() {
+        document.getElementById("tFrame").style.display = "none";
+      }
+      </script> -->
+</ion-content>
+
+<app-footer></app-footer>

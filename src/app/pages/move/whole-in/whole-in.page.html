@@ -1,0 +1,37 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+    <div class="pagecontainer pcmargin">
+
+      <div class="mainContainer">
+
+
+        <div class="matrContainer orange">
+  
+          <div class="pageTitle" (click)="presentModal()"><h4><span class="infoPopup"><img src="../../../../assets/images/aboutIconWhite.png"/></span>TRANSFORM In 30</h4>
+          
+         
+            
+            
+          </div>
+        
+        
+        <div class="pBanner"><img src="../../../../assets/images/wholein30.jpg"></div>
+        
+        <div class="daySelection">
+          <div class="dayPrev"><img src="../../../../assets/images/prevP.png"></div>
+          <div class="theDay"><a href="javascript:(0)" (click)="goto('/move/day-page')">Day 4</a></div>
+          <div class="dayNext"><img src="../../../../assets/images/nextP.png"></div>
+        </div><!--daySelection ends-->
+        
+        <div class="myRoutine">My Routine <span class="heartIcon"><img src="../../../../assets/images/move-heartfilled.png"></span></div>
+        
+         
+        </div><!--matrContainer-->
+                
+        <div class="clear"></div> 
+      </div><!--mainContainer-->
+    </div><!-- .pagecontainer -->
+</ion-content>
+
+<app-footer></app-footer>

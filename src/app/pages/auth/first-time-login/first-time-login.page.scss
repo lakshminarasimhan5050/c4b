@@ -1,0 +1,27 @@
+.loginPage{
+    background: url('../../../../assets/images/login-screen-bg.jpg') center center no-repeat fixed; 
+    background-size:cover; 
+}
+.loginPage::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(5,50,104,0.9);
+    position: absolute;
+}
+
+.mLogo {
+    margin:0;
+}
+
+.loginPage input[type="text"] {
+    width:76%;
+}
+
+p.thead {
+    font-size: 19px;
+}
+
+.loginPage input[type="submit"] {
+    width:76% !important;
+}

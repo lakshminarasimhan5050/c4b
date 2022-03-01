@@ -1,0 +1,61 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+    <div class="pagecontainer pcmargin">
+
+      <div class="mainContainer">
+
+        <div class="matrContainer orange">
+  
+          <div class="pageTitle"><h4><span class="infoPopup"><img (click)="presentModal()" src="../../../../assets/images/aboutIconWhite.png"/></span>Day 4</h4>
+        
+          </div>
+        
+        <div class="dpHead">
+          <div class="dphLeft">Choose Activity</div>
+          <div class="dphRight"><span class="checkTick"><img src="../../../../assets/images/checkTick.png"/></span>When Done</div>
+        </div>
+        
+        <ul class="moveActivity">
+          <li>
+           <div class="maLeft"><a href="javascript:(0)" (click)="goto('/move/workout')"><span class="checkTick"><img src="../../../../assets/images/move-workout.png"/></span>Workout</a></div>
+           <div class="maRight"><span class="moveCheckbox" id="moveActivity1"><img src="../../../../assets/images/checkTick.png"/></span></div>
+          </li> 
+        
+          <li>
+           <div class="maLeft"><a href="javascript:(0)" (click)="goto('/move/yoga')"><span class="checkTick"><img src="../../../../assets/images/code-come-down.png"/></span>Yoga</a></div>
+           <div class="maRight"><span class="moveCheckbox"><img src="../../../../assets/images/checkTick.png"/></span></div>
+           </li>
+           
+            <li>
+           <div class="maLeft"><a href="javascript:(0)" (click)="goto('/move/day-bio-hacks')"><span class="checkTick"><img src="../../../../assets/images/move-biohacks.png"/></span>Bio Hack</a></div>
+           <div class="maRight"><span class="moveCheckbox"><img src="../../../../assets/images/checkTick.png"/></span></div>
+           </li>   
+           
+             <li>
+           <div class="maLeft"><a href="javascript:(0)" (click)="goto('/move/day-health-tips')"><span class="checkTick"><img src="../../../../assets/images/move-healthtips.png"/></span>Health Tip</a></div>
+           <div class="maRight"><span class="moveCheckbox"><img src="../../../../assets/images/checkTick.png"/></span></div>
+           </li>
+           
+        
+           
+        </ul>
+        
+        <div class="activityProgressBar">
+          <div class="apBar">
+            <div class="apBarProgress" style="width:25%;"></div>
+          </div>
+          <p>1/4 Completed</p>
+        </div>
+        
+        
+         
+        </div><!--matrContainer-->
+        
+        
+        <div class="clear"></div> 
+      </div><!-- .maincontainer -->
+    </div><!-- .pagecontainer -->
+</ion-content>
+
+<app-footer></app-footer>

@@ -1,0 +1,41 @@
+
+<div class="pagecontainer header_top">
+  <div class="fixHdr">
+    <div class="topNavAnchor" (click)="sideMenu('open')"><img src="../assets/images/nav-icon.png"/></div>
+    <div class="topNavLogo"><h1><a (click)="goto('/home')"><img src="../assets/images/c4b-logo.png"/></a></h1></div>
+    <div class="topInCrisis"><a id="inCrisis" (click)="crisis('show')"><img src="../assets/images/incrbtnP.png"/></a></div>
+  </div><!--fixHdr ends-->
+
+  <div *ngIf="is_sidemenu" class="mainNav">
+    <span class="closeMainNav" (click)="sideMenu('close')">x</span>
+    <!-- <ul class="mainNavList" (click)="sideMenu('close')"> -->
+    <ul class="mainNavList">
+      <li><a href="javascript:(0)" class="main_menu homeScreen" (click)="goto('/move-menu')">Main Menu</a></li>
+      <li><a>About Code 4 Balance</a></li>
+      <li><a href="javascript:(0)" class="homeScreen" (click)="goto('/home')">Home Screen</a></li>
+      <li><a>Resources</a></li>
+      <li><a>Settings</a></li>
+      <li><a>Search</a></li>
+    </ul>
+    <div class="clear"></div> 
+  </div><!--mainNav ends-->
+  <div class="clear"></div> 
+</div><!-- .pagecontainer -->
+
+<div *ngIf="is_incrisis" class="popOverlay"></div>
+<!-- <div *ngIf="is_incrisis" class="inCrisisPopup">
+  <div class="icOptions">
+    <div class="icAlert">You have indicated that you are in crisis. Would you like a message and your GPS location sent to your designated peer?</div>
+    <div class="icBtn codeHelp"><a href="javascript:(0)" (click)="crisis('hide')">Yes, Send HELP!</a></div>
+    <div class="icBtn code4"><a href="javascript:(0)" (click)="crisis('hide')">No, I am Code 4</a></div>
+  </div>  
+</div> -->
+
+<div *ngIf="is_incrisis" class="inCrisisPopup ion-text-center">
+  <div class="icOptions">
+    <h5>In Crisis</h5>
+    <div class="icAlert"><p class="redAlert">You have indicated that you are in crisis.</p><p>Would you like a message and your GPS location sent to your designated peer?</p></div>
+    <div class="icBtn"><a href="help" (click)="crisis('hide')">Yes, HELP NEEDED!</a></div>
+    <div class="icBtn code4"><a href="javascript:(0)" (click)="crisis('hide')">No, help needed.</a></div>
+  </div>
+</div><!--inCrisisPopup ends-->

@@ -1,0 +1,43 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+    <div class="pagecontainer pcmargin">
+
+      <div class="mainContainer">
+
+        <div class="matrContainer orange">
+  
+          <div class="pageTitle" (click)="presentModal()"><h4><span class="infoPopup"><img src="../../../../assets/images/aboutIconWhite.png"/></span>Fitness Coach</h4>
+          
+          
+            
+            
+            
+          </div>
+        
+       <!-- <div class="pBanner"><img src="../../../../assets/images/fitness-coach.jpg"></div> -->
+         
+       <ul class="meter-tabs">
+        <li title="physical"><img src="../../../assets/images/Level1.png"/></li>
+        <li title="mental"><img src="../../../assets/images/Level2.png"/></li>
+        <li title="emotional"><img src="../../../assets/images/Level3.png"/></li>
+      </ul> 
+      <div class="abcd">
+      <a href="javascript:(0)" class="move-orangeButton" (click)="goto('/core')">Core</a>
+      <a href="javascript:(0)" class="move-orangeButton" (click)="goto('/cardio')">Cardio</a>
+      <a href="javascript:(0)" class="move-orangeButton" (click)="goto('/hiit')">HIIT</a>
+      <a href="javascript:(0)" class="move-orangeButton" (click)="goto('/resistance')">Resistance</a>
+      <a href="javascript:(0)" class="move-orangeButton" (click)="goto('/move/body-recovery')">Body Recovery</a>
+      </div>
+      
+        
+         
+        </div><!--matrContainer-->
+        
+      </div><!--mainContainer-->
+        
+      <div class="clear"></div> 
+    </div><!-- .pagecontainer -->
+</ion-content>
+
+<app-footer></app-footer>

@@ -1,0 +1,32 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <div class="pagecontainer pcmargin">
+
+    <div class="mainContainer">
+
+
+      <div class="matrContainer violet">
+
+        <div class="pageTitle">
+          <h4><span class="infoPopup"><img (click)="presentModal()" src="../../../../assets/images/aboutIconWhite.png" /></span>Peer Support / Mentor</h4>
+
+
+
+        </div>
+
+
+        <div class="pBanner"><img src="../../../../assets/images/peer-support-mentor.jpg"></div>
+        <a href="javascript:(0)" (click)="goto('connect/peer/internal-team')" class="subOptions">Internal Team</a>
+        <a href="javascript:(0)" (click)="goto('connect/peer/dept-protocols')" class="subOptions">Department Protocols</a>
+        <a href="javascript:(0)" (click)="goto('connect/peer/external')" class="subOptions">External Resources</a>
+      </div>
+      <!--matrContainer-->
+
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+  </div><!-- .pagecontainer -->
+</ion-content>
+
+<app-footer></app-footer>

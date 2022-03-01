@@ -1,0 +1,33 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+    <div class="pagecontainer pcmargin">
+
+      <div class="mainContainer">
+
+
+        <div class="matrContainer indigo">
+  
+          <div class="pageTitle"><h4>Come Down</h4>  </div>
+          <div class="summaryPoster"><img src="../../../../assets/images/code-come-down.png"></div>
+          <!-- <div class="readToggle"><img src="../../../../assets/images/playBtn.png" class="readIcon"><i>X</i></div>
+          <div class="readMatter"> -->
+              <div class="readMatterInr" id="readMatterInr">
+            <!-- <h6>Welcome to Come Down <br> Here you will learn:</h6> -->
+            <p>About Come Down</p>
+                    <p>The first step after a critical incident is to “come down.” This is vital and must be at the beginning of this process for every other step to succeed. Following a critical incident, there are strong emotions to address, physiological responses that need to be calmed, and immediate stressors that can be a detriment to moving forward if not responded to appropriately.
+                </p>
+                 </div><!--readMatterInr ends--> 
+                 <button class="deepDive yellow" id="deepDive" (click)="onheight()">Deeper Dive</button>
+                 <button class="dive" id="dive" (click)="ofheight()">Dive Deeper</button><!--deepDive ends-->
+               
+                   
+        </div><!--matrContainer-->
+        
+        <div class="clear"></div> 
+      </div>
+      <div class="clear"></div> 
+    </div><!-- .pagecontainer -->
+</ion-content>
+
+<app-footer></app-footer>

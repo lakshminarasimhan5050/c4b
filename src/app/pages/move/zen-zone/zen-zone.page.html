@@ -1,0 +1,41 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+    <div class="pagecontainer pcmargin">
+
+      <div class="mainContainer">
+
+
+        <div class="matrContainer orange">
+  
+          <div class="pageTitle" (click)="presentModal()"><h4><span class="infoPopup"><img src="../../../../assets/images/aboutIconWhite.png"/></span><div class="title">Zen Zone</div></h4>
+          
+           
+            
+            
+            
+          </div>
+        
+        
+        <!-- <div class="pBanner"><img src="../../../../assets/images/zenzone.jpg"></div> -->
+        <ul class="meter-tabs">
+          <li title="physical"><img src="../../../assets/images/Level1.png"/></li>
+          <li title="mental"><img src="../../../assets/images/Level2.png"/></li>
+          <li title="emotional"><img src="../../../assets/images/Level3.png"/></li>
+        </ul> 
+        <div class="abcd">
+        <a href="javascript:(0)" class="move-orangeButton" (click)="goto('/strengthen')">Strengthen</a>
+        <a href="javascript:(0)" class="move-orangeButton" (click)="goto('/move/rhythm')">Rhythm & Flow</a>
+        <a href="javascript:(0)" class="move-orangeButton" (click)="goto('/restore')">Restore & Relax</a>
+        </div>
+   
+         
+        </div><!--matrContainer-->
+        
+        <div class="clear"></div> 
+      </div>
+      <div class="clear"></div> 
+    </div><!-- .pagecontainer -->
+</ion-content>
+
+<app-footer></app-footer>

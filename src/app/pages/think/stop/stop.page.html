@@ -1,0 +1,115 @@
+<app-header></app-header>
+<ion-content [fullscreen]="true">
+  <!-- <body class="homePage"> -->
+  <div class="pagecontainer pcmargin">
+    <!-- <div class="mainContainerOnLoad">
+      <div class="stopBanner">
+        <img src="../../../../assets/images/stop.jpg" />
+      </div>
+      <div class="rygSignal">
+        <ul>
+          <li class="red">red</li>
+          <li class="yellow">yellow</li>
+          <li class="green">green</li>
+        </ul>
+      </div>
+    </div> -->
+    <!-- .mainContainerOnLoad -->
+
+    <div class="mainContainer">
+      <div class="matrContainer quickSOS">
+        <ul class="sos-tabs">
+          <li class="stopLink active" (click)="presentModal()">
+            <a (click)="stop()">Stop</a>
+            <span class="infoPopup infoPopupHowWorks"
+              ><img src="../../../../assets/images/aboutIconYellow.png"
+            /></span>
+          </li>
+
+          <!--summaryPopup-->
+          <li class="observeLink">
+            <a href="javascript:(0)" (click)="exit()">Observe</a>
+          </li>
+          <li class="selectLink">
+            <a href="javascript:(0)" (click)="select()">Select</a>
+          </li>
+        </ul>
+
+        <div class="sosmatr" id="stopMatr">
+          <h3 id="pushToStart" class="blinking" style="font-size: 40px">
+            PUSH TO START
+          </h3>
+          <h3 class="noBlink" style="font-size: 40px">{{actionTitle}}</h3>
+          <div class="circleText">
+            <svg
+              viewBox="0 0 160 120"
+              preserveAspectRatio="xMinYMin meet"
+              id="ccircle2"
+            >
+              <g>
+                <circle
+                  id="c7"
+                  r="38%"
+                  cx="50%"
+                  cy="50%"
+                  stroke="white"
+                  stroke-width="4"
+                  stroke-opacity="0.3"
+                  fill-opacity="0"
+                />
+                <circle
+                  id="c6"
+                  r="32%"
+                  cx="50%"
+                  cy="50%"
+                  stroke="white"
+                  stroke-width="4"
+                  stroke-opacity="0.3"
+                  fill-opacity="0"
+                />
+                <circle
+                  id="c5"
+                  r="26%"
+                  cx="50%"
+                  cy="50%"
+                  stroke="white"
+                  stroke-width="4"
+                  stroke-opacity="0.3"
+                  fill-opacity="0"
+                />
+                <circle
+                  id="c4"
+                  r="20%"
+                  cx="50%"
+                  cy="50%"
+                  stroke="white"
+                  stroke-width="4"
+                  stroke-opacity="0.3"
+                  fill-opacity="0"
+                />
+              </g>
+            </svg>
+            <div id="counterValue">{{count_no}}</div>
+          </div>
+          <div class="startStop2" id="counterValueStart" (click)="start()" style="width: 50%;
+          margin: 0 auto;">
+            START
+          </div>
+          <div class="startStop2" id="counterValueStop" (click)="stopClock()" style="display:none;width: 50%;
+          margin: 0 auto;">
+            STOP
+          </div>
+        </div>
+        <!--sosmatr ends-->
+      </div>
+      <!--matrContainer-->
+
+      <div class="clear"></div>
+    </div>
+    <!-- .mainContainer -->
+    <div class="clear"></div>
+  </div>
+  <!-- .pagecontainer -->
+  <div class="clear"></div>
+</ion-content>
+<app-footer></app-footer>

@@ -1,0 +1,34 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+    <div class="pagecontainer pcmargin">
+      <div class="mainContainer">
+
+
+        <div class="matrContainer "  [ngClass]="getClass">
+          <div class="pageTitle" [ngClass]="backgroundClass"><h4>KNOW YOUR INTENTION</h4></div>
+          
+          <div class="fwBanner"><img src="../../../assets/images/know-your-intention.png"/></div>
+          
+          <a href="javascript:(0)" class="backBtn" [ngClass]="getClass" >Anger Story</a>
+          <a href="javascript:(0)" class="backBtn" [ngClass]="getClass">In The Moment VS Big Picture</a>
+          <a href="javascript:(0)" class="backBtn" [ngClass]="getClass">Aligned vs Conflicted</a>
+          <a href="javascript:(0)" class="backBtn" [ngClass]="getClass">Back to S.O.S</a>
+        </div><!--matrContainer-->
+        
+        <!-- <div class="popOverlay"></div>
+        <div class="inCrisisPopup">
+        <div class="icOptions">
+        <div class="icAlert">You have indicated that you are in crisis. Would you like a message and your GPS location sent to your designated peer?</div>
+        <div class="icBtn"><a href="#">Yes, Send HELP!</a></div>
+        <div class="icBtn code4"><a href="index.html">No, I am Code 4</a></div>
+        </div>
+        </div> -->
+        
+        </div><!--mainContainer-->
+        
+        <div class="clear"></div> 
+    </div><!-- .pagecontainer -->
+</ion-content>
+
+<app-footer></app-footer>

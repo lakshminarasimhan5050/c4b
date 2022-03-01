@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+h4{margin:0;font-weight: bolder;}
+.summaryPopup{top:0; width:100%;}
+.debrief-page p{text-align:center;}
+.debrief-page button {margin:20px auto 30px !important;}
+.debrief-page .matrContainer{padding-bottom:30px;}
+
+.reviewCase{padding:10px;  }
+p.rQuestion{font-size:18px; text-align:left; margin-bottom:15px; padding:0;}
+.rWidget{}
+.rWidget select{display:none;}
+.rBar{display:block; clear:both; border-radius:20px; background:#fff; -webkit-box-shadow: -1px 0px 8px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 0px 8px 0px rgba(0,0,0,0.75);
+box-shadow: -1px 0px 8px 0px rgba(0,0,0,0.75);}
+
+.rBar a{display:inline-block; float:left; width:9.8%; text-align:center; color:#fff; text-shadow: 0 0 3px #000; padding: 5px 0px 3px; position:relative;}
+.rBar::after{content:""; clear:both; display:block; height:1px; width:100%;}
+.rBar a:hover::before,.activebarpoint::before{content:""; clear:both; display:block;  position: absolute;
+    border-top: 15px solid #fff;
+    border-bottom: 15px solid transparent;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    margin-left: 4px;
+    margin-top: 1px;}
+.rBar a.br-current::before{content:""; clear:both; display:block;  position: absolute;
+    border-top: 15px solid #fff;
+    border-bottom: 15px solid transparent;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    margin-left: 4px;
+    margin-top: 1px;}
+.rWidget input{display:none;}
+
+#angerMeterTabs .rBar{background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(248,7,0,1) 49%, rgba(226,2,10,1) 70%, rgba(0,0,0,1) 100%);}
+
+#guiltMeterTabs .rBar{background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(238,137,28,1) 49%, rgba(238,137,28,1) 70%, rgba(0,0,0,1) 100%);}
+
+#discontentMeterTabs .rBar{background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgb(246, 173, 9) 49%, rgb(246, 173, 9) 70%, rgba(0,0,0,1) 100%);}
+    
+#envyMeterTabs .rBar{background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgb(90, 132, 35) 49%, rgb(90, 132, 35) 70%, rgba(0,0,0,1) 100%);}
+    
+#sadMeterTabs .rBar{background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgb(59, 155, 205) 49%, rgb(59, 155, 205) 70%, rgba(0,0,0,1) 100%);}
+    
+#anxietyMeterTabs .rBar{background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgb(5, 89, 247) 49%, rgb(5, 89, 247) 70%, rgba(0,0,0,1) 100%);}
+    
+#lonelinessMeterTabs .rBar{background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgb(154, 31, 210) 49%, rgb(154, 31, 210) 70%, rgba(0,0,0,1) 100%);}
+    
+
+.rBarStatus{display:block; clear:both; color:#fff; padding:15px 0px 20px; border-bottom:2px solid #254f81;} .rBarStatus::after{content:""; clear:both; display:block; height:1px; width:100%;}
+.rBarStatus span.rbsLeft{width:50%; display:inline-block; float:left; text-align:left;}
+.rBarStatus span.rbsRight{width:50%; display:inline-block; float:left; text-align:right;}
+.concludingQuestion{border-bottom:2px solid #254f81; padding:15px;}
+.concludingQuestion p{text-align:left;}
+.concludingMessage{padding:15px;}
+.concludingMessage p{padding:15px; text-align:left; }
+.concludingMessage button{border:2px solid #f4b13e !important;}
+#tj{
+    color: #fff;
+}
+
+@media (min-width:768px){
+	
+	
+}
+
+/***************************************************************************grid*******************************/
+
+@-ms-viewport{width: device-width; }
+
+
+/*
+R #e2020a
+O #ee891c
+Y #dccf07
+G #97c255
+B #50a7db
+I #2b035c
+V #7f3f97
+*/
+
+
+#angerMeterTabs button{background: #254f81;  text-transform: uppercase;border-radius: 10px; padding: 12px 0px; display: block;  clear: both;  margin: 20px auto 80px;
+    cursor: pointer; border: 2px solid #e2020a;  width: 90%; font-size: 20px;  font-weight: bold;  color: #fff; }
+#guiltMeterTabs button{background: #254f81;  text-transform: uppercase;border-radius: 10px; padding: 12px 0px; display: block;  clear: both;  margin: 20px auto 80px;
+    cursor: pointer; border: 2px solid #ee891c;  width: 90%; font-size: 20px;  font-weight: bold;  color: #fff; }
+#discontentMeterTabs button{background: #254f81;  text-transform: uppercase;border-radius: 10px; padding: 12px 0px; display: block;  clear: both;  margin: 20px auto 80px;
+    cursor: pointer; border: 2px solid #f6ad09;  width: 90%; font-size: 20px;  font-weight: bold;  color: #fff; }
+#envyMeterTabs button{background: #254f81;  text-transform: uppercase;border-radius: 10px; padding: 12px 0px; display: block;  clear: both;  margin: 20px auto 80px;
+    cursor: pointer; border: 2px solid #5a8423;  width: 90%; font-size: 20px;  font-weight: bold;  color: #fff; }
+#sadMeterTabs button{background: #254f81;  text-transform: uppercase;border-radius: 10px; padding: 12px 0px; display: block;  clear: both;  margin: 20px auto 80px;
+    cursor: pointer; border: 2px solid #3b9bcd;  width: 90%; font-size: 20px;  font-weight: bold;  color: #fff; }
+#anxietyMeterTabs button{background: #254f81;  text-transform: uppercase;border-radius: 10px; padding: 12px 0px; display: block;  clear: both;  margin: 20px auto 80px;
+    cursor: pointer; border: 2px solid #0559f7;  width: 90%; font-size: 20px;  font-weight: bold;  color: #fff; }
+#lonelinessMeterTabs button{background: #254f81;  text-transform: uppercase;border-radius: 10px; padding: 12px 0px; display: block;  clear: both;  margin: 20px auto 80px;
+    cursor: pointer; border: 2px solid #9a1fd2;  width: 90%; font-size: 20px;  font-weight: bold;  color: #fff; }

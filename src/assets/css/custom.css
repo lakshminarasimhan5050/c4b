@@ -1,0 +1,61 @@
+body.homePage .fixHdr{
+    padding:0 !important;
+}
+
+body.homePage .fixHdr .topNavLogo {
+    padding-top:0px !important;
+}
+
+.fixftr {
+    max-height: 61px !important;
+}
+
+.mainContainer .q1, .mainContainer .q2, .mainContainer .q3, .mainContainer .q4 {
+    width:48%;
+}
+
+.q1.shrink, .q2.shrink, .q3.shrink, .q4.shrink, .q5.shrink, .q6.shrink {
+    width: 16.5%;
+}
+
+ul.qkidsList li {
+    padding:0px;
+}
+
+ul.qkidsList li h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.main-h4 {
+    font-size: 30px !important;
+}
+
+.inCrisisPopup {
+    width:92%;
+}
+
+.icBtn.code4 a, .codeHelp a {
+    text-align: center;;
+}
+
+.abtSummaryPopup{ 
+    width:100% !important;
+}
+
+.pagecontainer  {
+    min-height: 100%;
+}
+
+.form_error {
+    color: #ff2222;
+    font-weight: bold;
+}
+
+.toast_css {
+    text-align:center;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: none !important;
+}

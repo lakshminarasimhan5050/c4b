@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+.self-talk-page .summaryPopup{top:0;}
+
+
+
+
+@media (min-width:768px){
+	
+	
+}
+
+/***************************************************************************grid*******************************/
+
+@-ms-viewport{width: device-width; }
+
+
+/*
+R #c00000
+O #ff6600
+Y #dccf07
+G #97c255
+B #50a7db
+I #2b035c
+V #7f3f97
+*/
+
+#angerMeterTabs button{background: #254f81;  text-transform: uppercase;border-radius: 10px; padding: 12px 0px; display: block;  clear: both;  margin: 20px auto 80px;
+    cursor: pointer; border: 2px solid #e2020a;  width: 90%; font-size: 20px;  font-weight: bold;  color: #fff; }
+#guiltMeterTabs button{background: #254f81;  text-transform: uppercase;border-radius: 10px; padding: 12px 0px; display: block;  clear: both;  margin: 20px auto 80px;
+    cursor: pointer; border: 2px solid #ee891c;  width: 90%; font-size: 20px;  font-weight: bold;  color: #fff; }
+#discontentMeterTabs button{background: #254f81;  text-transform: uppercase;border-radius: 10px; padding: 12px 0px; display: block;  clear: both;  margin: 20px auto 80px;
+    cursor: pointer; border: 2px solid #f6ad09;  width: 90%; font-size: 20px;  font-weight: bold;  color: #fff; }
+#envyMeterTabs button{background: #254f81;  text-transform: uppercase;border-radius: 10px; padding: 12px 0px; display: block;  clear: both;  margin: 20px auto 80px;
+    cursor: pointer; border: 2px solid #5a8423;  width: 90%; font-size: 20px;  font-weight: bold;  color: #fff; }
+#sadMeterTabs button{background: #254f81;  text-transform: uppercase;border-radius: 10px; padding: 12px 0px; display: block;  clear: both;  margin: 20px auto 80px;
+    cursor: pointer; border: 2px solid #3b9bcd;  width: 90%; font-size: 20px;  font-weight: bold;  color: #fff; }
+#anxietyMeterTabs button{background: #254f81;  text-transform: uppercase;border-radius: 10px; padding: 12px 0px; display: block;  clear: both;  margin: 20px auto 80px;
+    cursor: pointer; border: 2px solid #0559f7;  width: 90%; font-size: 20px;  font-weight: bold;  color: #fff; }
+#lonelinessMeterTabs button{background: #254f81;  text-transform: uppercase;border-radius: 10px; padding: 12px 0px; display: block;  clear: both;  margin: 20px auto 80px;
+    cursor: pointer; border: 2px solid #9a1fd2;  width: 90%; font-size: 20px;  font-weight: bold;  color: #fff; }

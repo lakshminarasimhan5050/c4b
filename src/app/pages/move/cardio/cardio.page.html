@@ -1,0 +1,53 @@
+<app-header></app-header>
+<ion-content [fullscreen]="true">
+  <div class="pagecontainer pcmargin">
+    <div class="mainContainer">
+      <div class="matrContainer blue">
+        <div class="pageTitle">
+          <h4><span class="infoPopup"></span>cardio - 1</h4>
+        </div>
+        <div class="pBanner">
+          <div class="vFrame" style="display: none" id="tFrame">
+            <iframe
+              width="320"
+              height="220"
+              src="https://www.youtube.com/embed/y5IfmnqI2lE"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div  id="tImage">
+            <div class="banner-img">
+              <img src="../../../../assets/images/Layer52.png" />
+              <div class="play-button"  (click)="playVideo()">
+                <img src="../../../../assets/images/playBtn.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="readMatterInr" id="readMatterInr">
+          <br />
+          <p>This is about level 1 cardio.</p>
+          <p>This is about level 1 cardio.</p>
+          <p>This is about level 1 cardio.</p>
+        </div>
+        <!--readMatterInr ends-->
+        <div class="add2routine">
+          <span class="emptyHeart"
+            ><img src="../../../../assets/images/move-heart.png"
+          /></span>
+          <p>Add to my routine</p>
+        </div>
+      </div>
+      <!--matrContainer-->
+
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!-- .pagecontainer -->
+</ion-content>
+
+<app-footer></app-footer>

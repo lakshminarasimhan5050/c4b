@@ -1,0 +1,51 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <div class="pagecontainer pcmargin">
+    <div class="mainContainer">
+      <div class="matrContainer blue">
+        <div class="pageTitle">
+          <h4>
+            <span class="infoPopup"
+              ><img
+                (click)="presentModal()"
+                src="../../../../assets/images/aboutIconWhite.png" /></span
+            >Sleep Meditations
+          </h4>
+        </div>
+
+        <div class="pBanner">
+          <img src="../../../../assets/images/sleepMeditations.jpg" />
+        </div>
+
+        <a href="javascript:(0)" class="subOptions" (click)="goto('/body-scan')"
+          >Body Scan</a
+        >
+        <a
+          href="javascript:(0)"
+          class="subOptions"
+          (click)="goto('/breathwork')"
+          >Breathe Work</a
+        >
+        <a
+          href="javascript:(0)"
+          class="subOptions"
+          (click)="goto('/gratitude-journal')"
+          >Gratitude Practice</a
+        >
+        <a
+          href="javascript:(0)"
+          class="subOptions"
+          (click)="goto('/self-hypnosis')"
+          >Self Hypnosis</a
+        >
+      </div>
+      <!--matrContainer-->
+
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!-- .pagecontainer -->
+</ion-content>
+
+<app-footer></app-footer>

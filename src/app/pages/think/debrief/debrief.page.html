@@ -1,0 +1,707 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+    <div class="pagecontainer pcmargin">
+      <div class="mainContainer">
+
+
+        <div class="matrContainer yellow">
+  
+          <div class="pageTitle" (click)="presentModal()"><h4><span class="infoPopup"><img src="../../../assets/images/aboutIconWhite.png"/></span>Debrief</h4>
+          
+          
+          </div>
+        
+        <p>Select Emotion</p>
+        <div class="observeCircle">
+        <svg viewBox="0 0 140 140" preserveAspectRatio="xMinYMin meet" id="ccircle">
+          <g>
+            <circle id="c0" r="35%" cx="50%" cy="50%" stroke="white" stroke-width="2" stroke-opacity="0.6" fill-opacity="0" />
+          
+          <circle class="c1" id="angerMeter" r="10%" cx="50%" cy="15%" fill="#e2020a" stroke="#e2020a" stroke-width="8" stroke-opacity="0"></circle>
+          <text id="c1T" class="angerMeter" x="50%" y="15%" text-anchor="middle" fill="#fff" dy=".3em">Anger</text>
+          
+          <circle class="c2" id="guiltMeter" r="10%" cx="78%" cy="28%" fill="#ec8a1d" stroke="#ec8a1d" stroke-width="8" stroke-opacity="0"></circle>
+          <text id="c2T" class="guiltMeter" x="78%" y="28%" text-anchor="middle" fill="#fff" dy=".3em">Guilt</text>
+          
+          <circle class="c3" id="discontentMeter" r="10%" cx="85%" cy="55%" fill="#f6ad09" stroke="#f6ad09" stroke-width="8" stroke-opacity="0"></circle>
+          <text id="c3T" class="discontentMeter" x="85%" y="55%" text-anchor="middle" fill="#fff" dy=".3em">Discontent</text>
+          
+          <circle class="c4" id="envyMeter" r="10%" cx="68%" cy="79%" fill="#5b8426" stroke="#5b8426" stroke-width="8" stroke-opacity="0"></circle>
+          <text id="c4T" class="envyMeter" x="68%" y="79%" text-anchor="middle" fill="#fff" dy=".3em">Envy</text>
+          
+          <circle class="c5" id="sadMeter" r="10%" cx="34%" cy="79%" fill="#3b9bcd" stroke="#3b9bcd" stroke-width="8" stroke-opacity="0"></circle>
+          <text id="c5T" class="sadMeter" x="34%" y="79%" text-anchor="middle" fill="#fff" dy=".3em">Sad</text>
+          
+          <circle class="c6" id="anxietyMeter" r="10%" cx="15%" cy="55%" fill="#0759fd" stroke="#0759fd" stroke-width="8" stroke-opacity="0"></circle>
+          <text id="c6T" class="anxietyMeter" x="15%" y="55%" text-anchor="middle" fill="#fff" dy=".3em">Anxiety</text>
+          
+          <circle class="c7" id="lonelinessMeter" r="10%" cx="22%" cy="28%" fill="#9a1fd2" stroke="#9a1fd2" stroke-width="8" stroke-opacity="0"></circle>
+          <text id="c7T" class="lonelinessMeter" x="22%" y="28%" text-anchor="middle" fill="#fff" dy=".3em">Loneliness</text>
+          
+          </g>
+        </svg>
+        <div class="markingArrow">Mark It</div>
+        </div>
+        
+        
+        <div id="angerMeterTabs" class="meterTabsContent">
+        
+        <div class="reviewCase">
+          <p class="rQuestion">Rate the intensity of your anger:</p>
+          <div class="rWidget">
+              <div class="rBar" >
+                <a href="javascript:(0)" name="1"  [ngClass]="{'activebarpoint':(intencity==1)}" (click)="changeIntencity(1)">1</a>
+                <a href="javascript:(0)" name="2"  [ngClass]="{'activebarpoint':(intencity==2)}" (click)="changeIntencity(2)">2</a>
+                <a href="javascript:(0)" name="3"  [ngClass]="{'activebarpoint':(intencity==3)}" (click)="changeIntencity(3)">3</a>
+                <a href="javascript:(0)" name="4"  [ngClass]="{'activebarpoint':(intencity==4)}" (click)="changeIntencity(4)">4</a>
+                <a href="javascript:(0)" name="5"  [ngClass]="{'activebarpoint':(intencity==5)}" (click)="changeIntencity(5)">5</a>
+                <a href="javascript:(0)" name="6"  [ngClass]="{'activebarpoint':(intencity==6)}" (click)="changeIntencity(6)">6</a>
+                <a href="javascript:(0)" name="7"  [ngClass]="{'activebarpoint':(intencity==7)}" (click)="changeIntencity(7)">7</a>
+                <a href="javascript:(0)" name="8"  [ngClass]="{'activebarpoint':(intencity==8)}" (click)="changeIntencity(8)">8</a>
+                <a href="javascript:(0)" name="9"  [ngClass]="{'activebarpoint':(intencity==9)}" (click)="changeIntencity(9)">9</a>
+                <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(intencity==10)}" (click)="changeIntencity(10)">10</a>
+              </div><!--rBar ends-->
+              <input class="br-current-rating" type="text" value="0"/>
+              <div class="rBarStatus"><span class="rbsLeft">Annoyed</span> <span class="rbsRight">Enraged</span></div>
+          </div><!--rWidget ends-->
+        </div><!--reviewCase ends-->
+        
+        
+        <div class="reviewCase">
+          <p class="rQuestion">How common is this reaction for you?:</p>
+          <div class="rWidget">
+              <div class="rBar">
+                <a href="javascript:(0)" name="1" [ngClass]="{'activebarpoint':(reaction==1)}" (click)="changeReaction(1)">1</a>
+                <a href="javascript:(0)" name="2" [ngClass]="{'activebarpoint':(reaction==2)}" (click)="changeReaction(2)">2</a>
+                <a href="javascript:(0)" name="3" [ngClass]="{'activebarpoint':(reaction==3)}" (click)="changeReaction(3)">3</a>
+                <a href="javascript:(0)" name="4" [ngClass]="{'activebarpoint':(reaction==4)}" (click)="changeReaction(4)">4</a>
+                <a href="javascript:(0)" name="5" [ngClass]="{'activebarpoint':(reaction==5)}" (click)="changeReaction(5)">5</a>
+                <a href="javascript:(0)" name="6" [ngClass]="{'activebarpoint':(reaction==6)}" (click)="changeReaction(6)">6</a>
+                <a href="javascript:(0)" name="7" [ngClass]="{'activebarpoint':(reaction==7)}" (click)="changeReaction(7)">7</a>
+                <a href="javascript:(0)" name="8" [ngClass]="{'activebarpoint':(reaction==8)}" (click)="changeReaction(8)">8</a>
+                <a href="javascript:(0)" name="9" [ngClass]="{'activebarpoint':(reaction==9)}" (click)="changeReaction(9)">9</a>
+                <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(reaction==10)}" (click)="changeReaction(10)">10</a>
+              </div><!--rBar ends-->
+              <input class="br-current-rating" type="text" value="0"/>
+              <div class="rBarStatus"><span class="rbsLeft">Not Common</span> <span class="rbsRight">Very Common</span></div>
+          </div><!--rWidget ends-->
+        </div><!--reviewCase ends--> <!--reviewCase ends-->
+        
+        <div class="reviewCase">
+          <p class="rQuestion">How much stress did this create for you?:</p>
+          <div class="rWidget">
+              <div class="rBar" id="myCheck">
+                <a href="javascript:(0)" name="1" [ngClass]="{'activebarpoint':(stres_created==1)}" (click)="changeStresscreated(1)">1</a>
+                <a href="javascript:(0)" name="2" [ngClass]="{'activebarpoint':(stres_created==2)}" (click)="changeStresscreated(2)">2</a>
+                <a href="javascript:(0)" name="3" [ngClass]="{'activebarpoint':(stres_created==3)}" (click)="changeStresscreated(3)">3</a>
+                <a href="javascript:(0)" name="4" [ngClass]="{'activebarpoint':(stres_created==4)}" (click)="changeStresscreated(4)">4</a>
+                <a href="javascript:(0)" name="5" [ngClass]="{'activebarpoint':(stres_created==5)}" (click)="changeStresscreated(5)">5</a>
+                <a href="javascript:(0)" name="6" [ngClass]="{'activebarpoint':(stres_created==6)}" (click)="changeStresscreated(6)">6</a>
+                <a href="javascript:(0)" name="7" [ngClass]="{'activebarpoint':(stres_created==7)}" (click)="changeStresscreated(7)">7</a>
+                <a href="javascript:(0)" name="8" [ngClass]="{'activebarpoint':(stres_created==8)}" (click)="changeStresscreated(8)">8</a>
+                <a href="javascript:(0)" name="9" [ngClass]="{'activebarpoint':(stres_created==9)}" (click)="changeStresscreated(8)">9</a>
+                <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(stres_created==10)}" (click)="changeStresscreated(10)">10</a>
+              </div><!--rBar ends-->
+              <input class="br-current-rating" type="text" value="0"/>
+              <div class="rBarStatus"><span class="rbsLeft">Not Common</span> <span class="rbsRight">Very Common</span></div>
+          </div><!--rWidget ends-->
+        </div><!--reviewCase ends-->
+        
+        <div class="reviewCase">
+          <p class="rQuestion">How much stress do you percieve this caused for others?:</p>
+          <div class="rWidget">
+              <div class="rBar">
+                <a href="javascript:(0)" name="1" [ngClass]="{'activebarpoint':(stres_percieved==1)}" (click)="changeStresPercived(1)">1</a>
+                <a href="javascript:(0)" name="2" [ngClass]="{'activebarpoint':(stres_percieved==2)}" (click)="changeStresPercived(2)">2</a>
+                <a href="javascript:(0)" name="3" [ngClass]="{'activebarpoint':(stres_percieved==3)}" (click)="changeStresPercived(3)">3</a>
+                <a href="javascript:(0)" name="4" [ngClass]="{'activebarpoint':(stres_percieved==4)}" (click)="changeStresPercived(4)">4</a>
+                <a href="javascript:(0)" name="5" [ngClass]="{'activebarpoint':(stres_percieved==5)}" (click)="changeStresPercived(5)">5</a>
+                <a href="javascript:(0)" name="6" [ngClass]="{'activebarpoint':(stres_percieved==6)}" (click)="changeStresPercived(6)">6</a>
+                <a href="javascript:(0)" name="7" [ngClass]="{'activebarpoint':(stres_percieved==7)}" (click)="changeStresPercived(7)">7</a>
+                <a href="javascript:(0)" name="8" [ngClass]="{'activebarpoint':(stres_percieved==8)}" (click)="changeStresPercived(8)">8</a>
+                <a href="javascript:(0)" name="9" [ngClass]="{'activebarpoint':(stres_percieved==9)}" (click)="changeStresPercived(9)">9</a>
+                <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(stres_percieved==10)}" (click)="changeStresPercived(10)">10</a>
+              </div><!--rBar ends-->
+              <input class="br-current-rating" type="text" value="0"/>
+              <div class="rBarStatus"><span class="rbsLeft">Not Common</span> <span class="rbsRight">Very Common</span></div>
+          </div><!--rWidget ends-->
+        </div><!--reviewCase ends-->
+        
+        
+        <div class="concludingQuestion"><p>What is the take away from the situation to help you create healthier patterns?</p></div><!--concludingQuestion ends-->
+        
+        <div class="concludingMessage"><p>Well done! You have completed the S.O.S. process for this incident!  Consider making a note in your Thought Journal for future reference </p>
+        
+        <button class="btn" (click)="thoughtJournal()">Thought Journal</button>
+        <button class="btn" (click)="resetMindset()">Reset Mindset</button>
+        </div><!--concludingQuestion ends-->
+        </div><!--AngerMeterTabs ends-->  
+          
+          <div id="guiltMeterTabs" class="meterTabsContent">
+        
+        
+        <div class="reviewCase">
+          <p class="rQuestion">Rate the intensity of your anger:</p>
+          <div class="rWidget">
+              <div class="rBar" >
+                <a href="javascript:(0)" name="1"  [ngClass]="{'activebarpoint':(Intencity==1)}" (click)="ChangeIntencity(1)">1</a>
+                <a href="javascript:(0)" name="2"  [ngClass]="{'activebarpoint':(Intencity==2)}" (click)="ChangeIntencity(2)">2</a>
+                <a href="javascript:(0)" name="3"  [ngClass]="{'activebarpoint':(Intencity==3)}" (click)="ChangeIntencity(3)">3</a>
+                <a href="javascript:(0)" name="4"  [ngClass]="{'activebarpoint':(Intencity==4)}" (click)="ChangeIntencity(4)">4</a>
+                <a href="javascript:(0)" name="5" [ngClass]="{'activebarpoint':(Intencity==5)}" (click)="ChangeIntencity(5)">5</a>
+                <a href="javascript:(0)" name="6" [ngClass]="{'activebarpoint':(Intencity==6)}" (click)="ChangeIntencity(6)">6</a>
+                <a href="javascript:(0)" name="7" [ngClass]="{'activebarpoint':(Intencity==7)}" (click)="ChangeIntencity(7)">7</a>
+                <a href="javascript:(0)" name="8" [ngClass]="{'activebarpoint':(Intencity==8)}" (click)="ChangeIntencity(8)">8</a>
+                <a href="javascript:(0)" name="9" [ngClass]="{'activebarpoint':(Intencity==9)}" (click)="ChangeIntencity(9)">9</a>
+                <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(Intencity==10)}" (click)="ChangeIntencity(10)">10</a>
+              </div><!--rBar ends-->
+              <input class="br-current-rating" type="text" value="0"/>
+              <div class="rBarStatus"><span class="rbsLeft">Annoyed</span> <span class="rbsRight">Enraged</span></div>
+          </div><!--rWidget ends-->
+        </div><!--reviewCase ends-->
+        
+        <div class="reviewCase">
+          <p class="rQuestion">How common is this reaction for you?:</p>
+          <div class="rWidget">
+              <div class="rBar">
+                <a href="javascript:(0)" name="1" [ngClass]="{'activebarpoint':(Reaction==1)}" (click)="ChangeReaction(1)">1</a>
+                <a href="javascript:(0)" name="2" [ngClass]="{'activebarpoint':(Reaction==2)}" (click)="changeReaction(2)">2</a>
+                <a href="javascript:(0)" name="3" [ngClass]="{'activebarpoint':(Reaction==3)}" (click)="ChangeReaction(3)">3</a>
+                <a href="javascript:(0)" name="4" [ngClass]="{'activebarpoint':(Reaction==4)}" (click)="ChangeReaction(4)">4</a>
+                <a href="javascript:(0)" name="5" [ngClass]="{'activebarpoint':(Reaction==5)}" (click)="ChangeReaction(5)">5</a>
+                <a href="javascript:(0)" name="6" [ngClass]="{'activebarpoint':(Reaction==6)}" (click)="ChangeReaction(6)">6</a>
+                <a href="javascript:(0)" name="7" [ngClass]="{'activebarpoint':(Reaction==7)}" (click)="ChangeReaction(7)">7</a>
+                <a href="javascript:(0)" name="8" [ngClass]="{'activebarpoint':(Reaction==8)}" (click)="ChangeReaction(8)">8</a>
+                <a href="javascript:(0)" name="9" [ngClass]="{'activebarpoint':(Reaction==9)}" (click)="ChangeReaction(9)">9</a>
+                <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(Reaction==10)}" (click)="ChangeReaction(10)">10</a>
+              </div><!--rBar ends-->
+              <input class="br-current-rating" type="text" value="0"/>
+              <div class="rBarStatus"><span class="rbsLeft">Not Common</span> <span class="rbsRight">Very Common</span></div>
+          </div><!--rWidget ends-->
+        </div><!--reviewCase ends--> <!--reviewCase ends-->
+        
+        <div class="reviewCase">
+          <p class="rQuestion">How much stress did this create for you?:</p>
+          <div class="rWidget">
+              <div class="rBar" id="myCheck">
+                <a href="javascript:(0)" name="1" [ngClass]="{'activebarpoint':(stresCreated==1)}" (click)="ChangeStresscreated(1)">1</a>
+                <a href="javascript:(0)" name="2" [ngClass]="{'activebarpoint':(stresCreated==2)}" (click)="ChangeStresscreated(2)">2</a>
+                <a href="javascript:(0)" name="3" [ngClass]="{'activebarpoint':(stresCreated==3)}" (click)="ChangeStresscreated(3)">3</a>
+                <a href="javascript:(0)" name="4" [ngClass]="{'activebarpoint':(stresCreated==4)}" (click)="ChangeStresscreated(4)">4</a>
+                <a href="javascript:(0)" name="5" [ngClass]="{'activebarpoint':(stresCreated==5)}" (click)="ChangeStresscreated(5)">5</a>
+                <a href="javascript:(0)" name="6" [ngClass]="{'activebarpoint':(stresCreated==6)}" (click)="ChangeStresscreated(6)">6</a>
+                <a href="javascript:(0)" name="7" [ngClass]="{'activebarpoint':(stresCreated==7)}" (click)="ChangeStresscreated(7)">7</a>
+                <a href="javascript:(0)" name="8" [ngClass]="{'activebarpoint':(stresCreated==8)}" (click)="ChangeStresscreated(8)">8</a>
+                <a href="javascript:(0)" name="9" [ngClass]="{'activebarpoint':(stresCreated==9)}" (click)="ChangeStresscreated(8)">9</a>
+                <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(stresCreated==10)}" (click)="ChangeStresscreated(10)">10</a>
+              </div><!--rBar ends-->
+              <input class="br-current-rating" type="text" value="0"/>
+              <div class="rBarStatus"><span class="rbsLeft">Not Common</span> <span class="rbsRight">Very Common</span></div>
+          </div><!--rWidget ends-->
+        </div><!--reviewCase ends-->
+        
+        <div class="reviewCase">
+          <p class="rQuestion">How much stress do you percieve this caused for others?:</p>
+          <div class="rWidget">
+              <div class="rBar">
+                <a href="javascript:(0)" name="1" [ngClass]="{'activebarpoint':(stresPercieved==1)}" (click)="ChangeStresPercived(1)">1</a>
+                <a href="javascript:(0)" name="2" [ngClass]="{'activebarpoint':(stresPercieved==2)}" (click)="ChangeStresPercived(2)">2</a>
+                <a href="javascript:(0)" name="3" [ngClass]="{'activebarpoint':(stresPercieved==3)}" (click)="ChangeStresPercived(3)">3</a>
+                <a href="javascript:(0)" name="4" [ngClass]="{'activebarpoint':(stresPercieved==4)}" (click)="ChangeStresPercived(4)">4</a>
+                <a href="javascript:(0)" name="5" [ngClass]="{'activebarpoint':(stresPercieved==5)}" (click)="ChangeStresPercived(5)">5</a>
+                <a href="javascript:(0)" name="6" [ngClass]="{'activebarpoint':(stresPercieved==6)}" (click)="ChangeStresPercived(6)">6</a>
+                <a href="javascript:(0)" name="7" [ngClass]="{'activebarpoint':(stresPercieved==7)}" (click)="ChangeStresPercived(7)">7</a>
+                <a href="javascript:(0)" name="8" [ngClass]="{'activebarpoint':(stresPercieved==8)}" (click)="ChangeStresPercived(8)">8</a>
+                <a href="javascript:(0)" name="9" [ngClass]="{'activebarpoint':(stresPercieved==9)}" (click)="ChangeStresPercived(9)">9</a>
+                <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(stresPercieved==10)}" (click)="ChangeStresPercived(10)">10</a>
+              </div><!--rBar ends-->
+              <input class="br-current-rating" type="text" value="0"/>
+              <div class="rBarStatus"><span class="rbsLeft">Not Common</span> <span class="rbsRight">Very Common</span></div>
+          </div><!--rWidget ends-->
+        </div><!--reviewCase ends--> 
+        
+        <div class="concludingQuestion"><p>What is the take away from the situation to help you create healthier patterns?</p></div><!--concludingQuestion ends-->
+        
+        <div class="concludingMessage"><p>Well done! You have completed the S.O.S. process for this incident!  Consider making a note in your Thought Journal for future reference </p>
+        
+          <button class="btn"><a href="javascript:(0)" (click)="thoughtJournal()" id="tj">Thought Journal</a></button>
+        
+        <button class="btn" (click)="resetMindset()">Reset Mindset</button>
+
+        </div><!--concludingQuestion ends-->
+        </div><!--guiltMeterTabs ends-->  
+          
+        <div id="discontentMeterTabs" class="meterTabsContent">
+    
+          
+          <div class="reviewCase">
+            <p class="rQuestion">Rate the intensity of your anger:</p>
+            <div class="rWidget">
+                <div class="rBar" >
+                  <a href="javascript:(0)" name="1"  [ngClass]="{'activebarpoint':(discontentIntencity==1)}" (click)="discontentChangeIntencity(1)">1</a>
+                  <a href="javascript:(0)" name="2"  [ngClass]="{'activebarpoint':(discontentIntencity==2)}" (click)="changeIntencity(2)">2</a>
+                  <a href="javascript:(0)" name="3"  [ngClass]="{'activebarpoint':(discontentIntencity==3)}" (click)="discontentChangeIntencity(3)">3</a>I
+                  <a href="javascript:(0)" name="4"  [ngClass]="{'activebarpoint':(discontentIntencity==4)}" (click)="discontentChangeIntencity(4)">4</a>
+                  <a href="javascript:(0)" name="5" [ngClass]="{'activebarpoint':(discontentIntencity==5)}" (click)="discontentChangeIntencity(5)">5</a>
+                  <a href="javascript:(0)" name="6" [ngClass]="{'activebarpoint':(discontentIntencity==6)}" (click)="discontentChangeIntencity(6)">6</a>
+                  <a href="javascript:(0)" name="7" [ngClass]="{'activebarpoint':(discontentIntencity==7)}" (click)="changeIntencity(7)">7</a>
+                  <a href="javascript:(0)" name="8" [ngClass]="{'activebarpoint':(discontentIntencity==8)}" (click)="discontentChangeIntencity(8)">8</a>
+                  <a href="javascript:(0)" name="9" [ngClass]="{'activebarpoint':(discontentIntencity==9)}" (click)="discontentChangeIntencity(9)">9</a>
+                  <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(discontentIntencity==10)}" (click)="discontentChangeIntencity(10)">10</a>
+                </div><!--rBar ends-->
+                <input class="br-current-rating" type="text" value="0"/>
+                <div class="rBarStatus"><span class="rbsLeft">Annoyed</span> <span class="rbsRight">Enraged</span></div>
+            </div><!--rWidget ends-->
+          </div><!--reviewCase ends-->
+          
+          
+          <div class="reviewCase">
+            <p class="rQuestion">How common is this reaction for you?:</p>
+            <div class="rWidget">
+                <div class="rBar">
+                  <a href="javascript:(0)" name="1" [ngClass]="{'activebarpoint':(discontentReaction==1)}" (click)="discontentChangeReaction(1)">1</a>
+                  <a href="javascript:(0)" name="2" [ngClass]="{'activebarpoint':(discontentReaction==2)}" (click)="discontentChangeReaction(2)">2</a>
+                  <a href="javascript:(0)" name="3" [ngClass]="{'activebarpoint':(discontentReaction==3)}" (click)="discontentChangeReaction(3)">3</a>
+                  <a href="javascript:(0)" name="4" [ngClass]="{'activebarpoint':(discontentReaction==4)}" (click)="discontentChangeReaction(4)">4</a>
+                  <a href="javascript:(0)" name="5" [ngClass]="{'activebarpoint':(discontentReaction==5)}" (click)="discontentChangeReaction(5)">5</a>
+                  <a href="javascript:(0)" name="6" [ngClass]="{'activebarpoint':(discontentReaction==6)}" (click)="discontentChangeReaction(6)">6</a>
+                  <a href="javascript:(0)" name="7" [ngClass]="{'activebarpoint':(discontentReaction==7)}" (click)="discontentChangeReaction(7)">7</a>
+                  <a href="javascript:(0)" name="8" [ngClass]="{'activebarpoint':(discontentReaction==8)}" (click)="discontentChangeReaction(8)">8</a>
+                  <a href="javascript:(0)" name="9" [ngClass]="{'activebarpoint':(discontentReaction==9)}" (click)="discontentChangeReaction(9)">9</a>
+                  <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(discontentReaction==10)}" (click)="discontentChangeReaction(10)">10</a>
+                </div><!--rBar ends-->
+                <input class="br-current-rating" type="text" value="0"/>
+                <div class="rBarStatus"><span class="rbsLeft">Not Common</span> <span class="rbsRight">Very Common</span></div>
+            </div><!--rWidget ends-->
+          </div><!--reviewCase ends--> <!--reviewCase ends-->
+          
+          <div class="reviewCase">
+            <p class="rQuestion">How much stress did this create for you?:</p>
+            <div class="rWidget">
+                <div class="rBar" id="myCheck">
+                  <a href="javascript:(0)" name="1" [ngClass]="{'activebarpoint':(discontentstresCreated==1)}" (click)="discontentChangeStresscreated(1)">1</a>
+                  <a href="javascript:(0)" name="2" [ngClass]="{'activebarpoint':(discontentstresCreated==2)}" (click)="discontentChangeStresscreated(2)">2</a>
+                  <a href="javascript:(0)" name="3" [ngClass]="{'activebarpoint':(discontentstresCreated==3)}" (click)="discontentChangeStresscreated(3)">3</a>
+                  <a href="javascript:(0)" name="4" [ngClass]="{'activebarpoint':(discontentstresCreated==4)}" (click)="discontentChangeStresscreated(4)">4</a>
+                  <a href="javascript:(0)" name="5" [ngClass]="{'activebarpoint':(discontentstresCreated==5)}" (click)="discontentChangeStresscreated(5)">5</a>
+                  <a href="javascript:(0)" name="6" [ngClass]="{'activebarpoint':(discontentstresCreated==6)}" (click)="discontentChangeStresscreated(6)">6</a>
+                  <a href="javascript:(0)" name="7" [ngClass]="{'activebarpoint':(discontentstresCreated==7)}" (click)="discontentChangeStresscreated(7)">7</a>
+                  <a href="javascript:(0)" name="8" [ngClass]="{'activebarpoint':(discontentstresCreated==8)}" (click)="discontentChangeStresscreated(8)">8</a>
+                  <a href="javascript:(0)" name="9" [ngClass]="{'activebarpoint':(discontentstresCreated==9)}" (click)="discontentChangeStresscreated(8)">9</a>
+                  <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(discontentstresCreated==10)}" (click)="discontentChangeStresscreated(10)">10</a>
+                </div><!--rBar ends-->
+                <input class="br-current-rating" type="text" value="0"/>
+                <div class="rBarStatus"><span class="rbsLeft">Not Common</span> <span class="rbsRight">Very Common</span></div>
+            </div><!--rWidget ends-->
+          </div><!--reviewCase ends-->
+          
+          <div class="reviewCase">
+            <p class="rQuestion">How much stress do you percieve this caused for others?:</p>
+            <div class="rWidget">
+                <div class="rBar">
+                  <a href="javascript:(0)" name="1" [ngClass]="{'activebarpoint':(discontentstresPercieved==1)}" (click)="discontentChangeStresPercived(1)">1</a>
+                  <a href="javascript:(0)" name="2" [ngClass]="{'activebarpoint':(discontentstresPercieved==2)}" (click)="discontentChangeStresPercived(2)">2</a>
+                  <a href="javascript:(0)" name="3" [ngClass]="{'activebarpoint':(discontentstresPercieved==3)}" (click)="discontentChangeStresPercived(3)">3</a>
+                  <a href="javascript:(0)" name="4" [ngClass]="{'activebarpoint':(discontentstresPercieved==4)}" (click)="discontentChangeStresPercived(4)">4</a>
+                  <a href="javascript:(0)" name="5" [ngClass]="{'activebarpoint':(discontentstresPercieved==5)}" (click)="discontentChangeStresPercived(5)">5</a>
+                  <a href="javascript:(0)" name="6" [ngClass]="{'activebarpoint':(discontentstresPercieved==6)}" (click)="discontentChangeStresPercived(6)">6</a>
+                  <a href="javascript:(0)" name="7" [ngClass]="{'activebarpoint':(discontentstresPercieved==7)}" (click)="discontentChangeStresPercived(7)">7</a>
+                  <a href="javascript:(0)" name="8" [ngClass]="{'activebarpoint':(discontentstresPercieved==8)}" (click)="discontentChangeStresPercived(8)">8</a>
+                  <a href="javascript:(0)" name="9" [ngClass]="{'activebarpoint':(discontentstresPercieved==9)}" (click)="discontentChangeStresPercived(9)">9</a>
+                  <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(discontentstresPercieved==10)}" (click)="discontentChangeStresPercived(10)">10</a>
+                </div><!--rBar ends-->
+                <input class="br-current-rating" type="text" value="0"/>
+                <div class="rBarStatus"><span class="rbsLeft">Not Common</span> <span class="rbsRight">Very Common</span></div>
+            </div><!--rWidget ends-->
+          </div><!--reviewCase ends-->
+          
+          <div class="concludingQuestion"><p>What is the take away from the situation to help you create healthier patterns?</p></div><!--concludingQuestion ends-->
+          
+          <div class="concludingMessage"><p>Well done! You have completed the S.O.S. process for this incident!  Consider making a note in your Thought Journal for future reference </p>
+          
+            <button class="btn"><a href="javascript:(0)" (click)="thoughtJournal()" id="tj">Thought Journal</a></button>
+          
+          <button class="btn" (click)="resetMindset()">Reset Mindset</button>
+  
+  
+          </div><!--concludingQuestion ends-->
+          </div>
+          <div id="envyMeterTabs" class="meterTabsContent">
+            
+            <div class="reviewCase">
+              <p class="rQuestion">Rate the intensity of your Discount:</p>
+              <div class="rWidget">
+                  <div class="rBar">
+                    <a href="javascript:(0)" name="1"  [ngClass]="{'activebarpoint':(envyintencity==1)}" (click)="envychangeIntencity(1)">1</a>
+                    <a href="javascript:(0)" name="2"  [ngClass]="{'activebarpoint':(envyintencity==2)}" (click)="envychangeIntencity(2)">2</a>
+                    <a href="javascript:(0)" name="3"  [ngClass]="{'activebarpoint':(envyintencity==3)}" (click)="envychangeIntencity(3)">3</a>
+                    <a href="javascript:(0)" name="4"  [ngClass]="{'activebarpoint':(envyintencity==4)}" (click)="envychangeIntencity(4)">4</a>
+                    <a href="javascript:(0)" name="5"  [ngClass]="{'activebarpoint':(envyintencity==5)}" (click)="envychangeIntencity(5)">5</a>
+                    <a href="javascript:(0)" name="6"  [ngClass]="{'activebarpoint':(envyintencity==6)}" (click)="envychangeIntencity(6)">6</a>
+                    <a href="javascript:(0)" name="7"  [ngClass]="{'activebarpoint':(envyintencity==7)}" (click)="envychangeIntencity(7)">7</a>
+                    <a href="javascript:(0)" name="8"  [ngClass]="{'activebarpoint':(envyintencity==8)}" (click)="envychangeIntencity(8)">8</a>
+                    <a href="javascript:(0)" name="9"  [ngClass]="{'activebarpoint':(envyintencity==9)}" (click)="envychangeIntencity(9)">9</a>
+                    <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(envyintencity==10)}" (click)="envychangeIntencity(10)">10</a>
+                  </div><!--rBar ends-->
+                  <input class="br-current-rating" type="text" value="0"/>
+                  <div class="rBarStatus"><span class="rbsLeft">Annoyed</span> <span class="rbsRight">Enraged</span></div>
+              </div><!--rWidget ends-->
+            </div><!--reviewCase ends-->
+            
+            <div class="reviewCase">
+              <p class="rQuestion">How common is this reaction for you?:</p>
+              <div class="rWidget">
+                  <div class="rBar">
+                    <a href="javascript:(0)" name="1" [ngClass]="{'activebarpoint':(envyreaction==1)}" (click)="envychangeReaction(1)">1</a>
+                    <a href="javascript:(0)" name="2" [ngClass]="{'activebarpoint':(envyreaction==2)}" (click)="envychangeReaction(2)">2</a>
+                    <a href="javascript:(0)" name="3" [ngClass]="{'activebarpoint':(envyreaction==3)}" (click)="envychangeReaction(3)">3</a>
+                    <a href="javascript:(0)" name="4" [ngClass]="{'activebarpoint':(envyreaction==4)}" (click)="envychangeReaction(4)">4</a>
+                    <a href="javascript:(0)" name="5" [ngClass]="{'activebarpoint':(envyreaction==5)}" (click)="envychangeReaction(5)">5</a>
+                    <a href="javascript:(0)" name="6" [ngClass]="{'activebarpoint':(envyreaction==6)}" (click)="envychangeReaction(6)">6</a>
+                    <a href="javascript:(0)" name="7" [ngClass]="{'activebarpoint':(envyreaction==7)}" (click)="envychangeReaction(7)">7</a>
+                    <a href="javascript:(0)" name="8" [ngClass]="{'activebarpoint':(envyreaction==8)}" (click)="envychangeReaction(8)">8</a>
+                    <a href="javascript:(0)" name="9" [ngClass]="{'activebarpoint':(envyreaction==9)}" (click)="envychangeReaction(9)">9</a>
+                    <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(envyreaction==10)}" (click)="envychangeReaction(10)">10</a>
+                  </div><!--rBar ends-->
+                  <input class="br-current-rating" type="text" value="0"/>
+                  <div class="rBarStatus"><span class="rbsLeft">Not Common</span> <span class="rbsRight">Very Common</span></div>
+              </div><!--rWidget ends-->
+            </div><!--reviewCase ends--> <!--reviewCase ends-->
+            
+            <div class="reviewCase">
+              <p class="rQuestion">How much stress did this create for you?:</p>
+              <div class="rWidget">
+                  <div class="rBar" id="myCheck">
+                    <a href="javascript:(0)" name="1" [ngClass]="{'activebarpoint':(envystres_created==1)}" (click)="envychangeStresscreated(1)">1</a>
+                    <a href="javascript:(0)" name="2" [ngClass]="{'activebarpoint':(envystres_created==2)}" (click)="envychangeStresscreated(2)">2</a>
+                    <a href="javascript:(0)" name="3" [ngClass]="{'activebarpoint':(envystres_created==3)}" (click)="envychangeStresscreated(3)">3</a>
+                    <a href="javascript:(0)" name="4" [ngClass]="{'activebarpoint':(envystres_created==4)}" (click)="envychangeStresscreated(4)">4</a>
+                    <a href="javascript:(0)" name="5" [ngClass]="{'activebarpoint':(envystres_created==5)}" (click)="envychangeStresscreated(5)">5</a>
+                    <a href="javascript:(0)" name="6" [ngClass]="{'activebarpoint':(envystres_created==6)}" (click)="envychangeStresscreated(6)">6</a>
+                    <a href="javascript:(0)" name="7" [ngClass]="{'activebarpoint':(envystres_created==7)}" (click)="envychangeStresscreated(7)">7</a>
+                    <a href="javascript:(0)" name="8" [ngClass]="{'activebarpoint':(envystres_created==8)}" (click)="envychangeStresscreated(8)">8</a>
+                    <a href="javascript:(0)" name="9" [ngClass]="{'activebarpoint':(envystres_created==9)}" (click)="envychangeStresscreated(8)">9</a>
+                    <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(envystres_created==10)}" (click)="envychangeStresscreated(10)">10</a>
+                  </div><!--rBar ends-->
+                  <input class="br-current-rating" type="text" value="0"/>
+                  <div class="rBarStatus"><span class="rbsLeft">Not Common</span> <span class="rbsRight">Very Common</span></div>
+              </div><!--rWidget ends-->
+            </div><!--reviewCase ends-->
+            
+            <div class="reviewCase">
+              <p class="rQuestion">How much stress do you percieve this caused for others?:</p>
+              <div class="rWidget">
+                  <div class="rBar">
+                    <a href="javascript:(0)" name="1" [ngClass]="{'activebarpoint':(envystres_percieved==1)}" (click)="envychangeStresPercived(1)">1</a>
+                    <a href="javascript:(0)" name="2" [ngClass]="{'activebarpoint':(envystres_percieved==2)}" (click)="envychangeStresPercived(2)">2</a>
+                    <a href="javascript:(0)" name="3" [ngClass]="{'activebarpoint':(envystres_percieved==3)}" (click)="envychangeStresPercived(3)">3</a>
+                    <a href="javascript:(0)" name="4" [ngClass]="{'activebarpoint':(envystres_percieved==4)}" (click)="envychangeStresPercived(4)">4</a>
+                    <a href="javascript:(0)" name="5" [ngClass]="{'activebarpoint':(envystres_percieved==5)}" (click)="envychangeStresPercived(5)">5</a>
+                    <a href="javascript:(0)" name="6" [ngClass]="{'activebarpoint':(envystres_percieved==6)}" (click)="envychangeStresPercived(6)">6</a>
+                    <a href="javascript:(0)" name="7" [ngClass]="{'activebarpoint':(envystres_percieved==7)}" (click)="envychangeStresPercived(7)">7</a>
+                    <a href="javascript:(0)" name="8" [ngClass]="{'activebarpoint':(envystres_percieved==8)}" (click)="envychangeStresPercived(8)">8</a>
+                    <a href="javascript:(0)" name="9" [ngClass]="{'activebarpoint':(envystres_percieved==9)}" (click)="envychangeStresPercived(9)">9</a>
+                    <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(envystres_percieved==10)}" (click)="envychangeStresPercived(10)">10</a>
+                  </div><!--rBar ends-->
+                  <input class="br-current-rating" type="text" value="0"/>
+                  <div class="rBarStatus"><span class="rbsLeft">Not Common</span> <span class="rbsRight">Very Common</span></div>
+              </div><!--rWidget ends-->
+            </div><!--reviewCase ends-->
+            
+            <div class="concludingQuestion"><p>What is the take away from the situation to help you create healthier patterns?</p></div><!--concludingQuestion ends-->
+            
+            <div class="concludingMessage"><p>Well done! You have completed the S.O.S. process for this incident!  Consider making a note in your Thought Journal for future reference </p>
+            
+            <button class="btn" (click)="thoughtJournal()">Thought Journal</button>
+            <button class="btn" (click)="resetMindset()">Reset Mindset</button>
+            </div><!--concludingQuestion ends-->
+          </div><!--discontentTabs ends-->
+
+          <div id="sadMeterTabs" class="meterTabsContent">
+          
+            
+            <div class="reviewCase">
+              <p class="rQuestion">Rate the intensity of your Discount:</p>
+              <div class="rWidget">
+                  <div class="rBar">
+                    <a href="javascript:(0)" name="1"  [ngClass]="{'activebarpoint':(sadintencity==1)}" (click)="sadchangeIntencity(1)">1</a>
+                    <a href="javascript:(0)" name="2"  [ngClass]="{'activebarpoint':(sadintencity==2)}" (click)="sadchangeIntencity(2)">2</a>
+                    <a href="javascript:(0)" name="3"  [ngClass]="{'activebarpoint':(sadintencity==3)}" (click)="sadchangeIntencity(3)">3</a>
+                    <a href="javascript:(0)" name="4"  [ngClass]="{'activebarpoint':(sadintencity==4)}" (click)="sadchangeIntencity(4)">4</a>
+                    <a href="javascript:(0)" name="5"  [ngClass]="{'activebarpoint':(sadintencity==5)}" (click)="sadchangeIntencity(5)">5</a>
+                    <a href="javascript:(0)" name="6"  [ngClass]="{'activebarpoint':(sadintencity==6)}" (click)="sadchangeIntencity(6)">6</a>
+                    <a href="javascript:(0)" name="7"  [ngClass]="{'activebarpoint':(sadintencity==7)}" (click)="sadchangeIntencity(7)">7</a>
+                    <a href="javascript:(0)" name="8"  [ngClass]="{'activebarpoint':(sadintencity==8)}" (click)="sadchangeIntencity(8)">8</a>
+                    <a href="javascript:(0)" name="9"  [ngClass]="{'activebarpoint':(sadintencity==9)}" (click)="sadchangeIntencity(9)">9</a>
+                    <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(sadintencity==10)}" (click)="sadchangeIntencity(10)">10</a>
+                  </div><!--rBar ends-->
+                  <input class="br-current-rating" type="text" value="0"/>
+                  <div class="rBarStatus"><span class="rbsLeft">Annoyed</span> <span class="rbsRight">Enraged</span></div>
+              </div><!--rWidget ends-->
+            </div><!--reviewCase ends-->
+            
+            <div class="reviewCase">
+              <p class="rQuestion">How common is this reaction for you?:</p>
+              <div class="rWidget">
+                  <div class="rBar">
+                    <a href="javascript:(0)" name="1" [ngClass]="{'activebarpoint':(sadreaction==1)}" (click)="sadchangeReaction(1)">1</a>
+                    <a href="javascript:(0)" name="2" [ngClass]="{'activebarpoint':(sadreaction==2)}" (click)="sadchangeReaction(2)">2</a>
+                    <a href="javascript:(0)" name="3" [ngClass]="{'activebarpoint':(sadreaction==3)}" (click)="sadchangeReaction(3)">3</a>
+                    <a href="javascript:(0)" name="4" [ngClass]="{'activebarpoint':(sadreaction==4)}" (click)="sadchangeReaction(4)">4</a>
+                    <a href="javascript:(0)" name="5" [ngClass]="{'activebarpoint':(sadreaction==5)}" (click)="sadchangeReaction(5)">5</a>
+                    <a href="javascript:(0)" name="6" [ngClass]="{'activebarpoint':(sadreaction==6)}" (click)="sadchangeReaction(6)">6</a>
+                    <a href="javascript:(0)" name="7" [ngClass]="{'activebarpoint':(sadreaction==7)}" (click)="sadchangeReaction(7)">7</a>
+                    <a href="javascript:(0)" name="8" [ngClass]="{'activebarpoint':(sadreaction==8)}" (click)="sadchangeReaction(8)">8</a>
+                    <a href="javascript:(0)" name="9" [ngClass]="{'activebarpoint':(sadreaction==9)}" (click)="sadchangeReaction(9)">9</a>
+                    <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(sadreaction==10)}" (click)="sadchangeReaction(10)">10</a>
+                  </div><!--rBar ends-->
+                  <input class="br-current-rating" type="text" value="0"/>
+                  <div class="rBarStatus"><span class="rbsLeft">Not Common</span> <span class="rbsRight">Very Common</span></div>
+              </div><!--rWidget ends-->
+            </div><!--reviewCase ends--> <!--reviewCase ends-->
+            
+            <div class="reviewCase">
+              <p class="rQuestion">How much stress did this create for you?:</p>
+              <div class="rWidget">
+                  <div class="rBar" id="myCheck">
+                    <a href="javascript:(0)" name="1" [ngClass]="{'activebarpoint':(sadstres_created==1)}" (click)="sadchangeStresscreated(1)">1</a>
+                    <a href="javascript:(0)" name="2" [ngClass]="{'activebarpoint':(sadstres_created==2)}" (click)="sadchangeStresscreated(2)">2</a>
+                    <a href="javascript:(0)" name="3" [ngClass]="{'activebarpoint':(sadstres_created==3)}" (click)="sadchangeStresscreated(3)">3</a>
+                    <a href="javascript:(0)" name="4" [ngClass]="{'activebarpoint':(sadstres_created==4)}" (click)="sadchangeStresscreated(4)">4</a>
+                    <a href="javascript:(0)" name="5" [ngClass]="{'activebarpoint':(sadstres_created==5)}" (click)="sadchangeStresscreated(5)">5</a>
+                    <a href="javascript:(0)" name="6" [ngClass]="{'activebarpoint':(sadstres_created==6)}" (click)="sadchangeStresscreated(6)">6</a>
+                    <a href="javascript:(0)" name="7" [ngClass]="{'activebarpoint':(sadstres_created==7)}" (click)="sadchangeStresscreated(7)">7</a>
+                    <a href="javascript:(0)" name="8" [ngClass]="{'activebarpoint':(sadstres_created==8)}" (click)="sadchangeStresscreated(8)">8</a>
+                    <a href="javascript:(0)" name="9" [ngClass]="{'activebarpoint':(sadstres_created==9)}" (click)="sadchangeStresscreated(8)">9</a>
+                    <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(sadstres_created==10)}" (click)="sadchangeStresscreated(10)">10</a>
+                  </div><!--rBar ends-->
+                  <input class="br-current-rating" type="text" value="0"/>
+                  <div class="rBarStatus"><span class="rbsLeft">Not Common</span> <span class="rbsRight">Very Common</span></div>
+              </div><!--rWidget ends-->
+            </div><!--reviewCase ends-->
+            
+            <div class="reviewCase">
+              <p class="rQuestion">How much stress do you percieve this caused for others?:</p>
+              <div class="rWidget">
+                  <div class="rBar">
+                    <a href="javascript:(0)" name="1" [ngClass]="{'activebarpoint':(sadstres_percieved==1)}" (click)="sadchangeStresPercived(1)">1</a>
+                    <a href="javascript:(0)" name="2" [ngClass]="{'activebarpoint':(sadstres_percieved==2)}" (click)="sadchangeStresPercived(2)">2</a>
+                    <a href="javascript:(0)" name="3" [ngClass]="{'activebarpoint':(sadstres_percieved==3)}" (click)="sadchangeStresPercived(3)">3</a>
+                    <a href="javascript:(0)" name="4" [ngClass]="{'activebarpoint':(sadstres_percieved==4)}" (click)="sadchangeStresPercived(4)">4</a>
+                    <a href="javascript:(0)" name="5" [ngClass]="{'activebarpoint':(sadstres_percieved==5)}" (click)="changeStresPercived(5)">5</a>
+                    <a href="javascript:(0)" name="6" [ngClass]="{'activebarpoint':(sadstres_percieved==6)}" (click)="sadchangeStresPercived(6)">6</a>
+                    <a href="javascript:(0)" name="7" [ngClass]="{'activebarpoint':(sadstres_percieved==7)}" (click)="sadchangeStresPercived(7)">7</a>
+                    <a href="javascript:(0)" name="8" [ngClass]="{'activebarpoint':(sadstres_percieved==8)}" (click)="sadchangeStresPercived(8)">8</a>
+                    <a href="javascript:(0)" name="9" [ngClass]="{'activebarpoint':(sadstres_percieved==9)}" (click)="sadchangeStresPercived(9)">9</a>
+                    <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(sadstres_percieved==10)}" (click)="sadchangeStresPercived(10)">10</a>
+                  </div><!--rBar ends-->
+                  <input class="br-current-rating" type="text" value="0"/>
+                  <div class="rBarStatus"><span class="rbsLeft">Not Common</span> <span class="rbsRight">Very Common</span></div>
+              </div><!--rWidget ends-->
+            </div><!--reviewCase ends-->
+            
+            <div class="concludingQuestion"><p>What is the take away from the situation to help you create healthier patterns?</p></div><!--concludingQuestion ends-->
+            
+            <div class="concludingMessage"><p>Well done! You have completed the S.O.S. process for this incident!  Consider making a note in your Thought Journal for future reference </p>
+            
+            <button class="btn" (click)="thoughtJournal()">Thought Journal</button>
+            <button class="btn" (click)="resetMindset()">Reset Mindset</button>
+            </div><!--concludingQuestion ends-->
+          </div><!--discontentTabs ends-->
+
+          <div id="anxietyMeterTabs" class="meterTabsContent">
+        
+            
+            <div class="reviewCase">
+              <p class="rQuestion">Rate the intensity of your Discount:</p>
+              <div class="rWidget">
+                  <div class="rBar">
+                    <a href="javascript:(0)" name="1"  [ngClass]="{'activebarpoint':(anxietyintencity==1)}" (click)="anxietychangeIntencity(1)">1</a>
+                    <a href="javascript:(0)" name="2"  [ngClass]="{'activebarpoint':(anxietyintencity==2)}" (click)="anxietychangeIntencity(2)">2</a>
+                    <a href="javascript:(0)" name="3"  [ngClass]="{'activebarpoint':(anxietyintencity==3)}" (click)="anxietychangeIntencity(3)">3</a>
+                    <a href="javascript:(0)" name="4"  [ngClass]="{'activebarpoint':(anxietyintencity==4)}" (click)="anxietychangeIntencity(4)">4</a>
+                    <a href="javascript:(0)" name="5"  [ngClass]="{'activebarpoint':(anxietyintencity==5)}" (click)="anxietychangeIntencity(5)">5</a>
+                    <a href="javascript:(0)" name="6"  [ngClass]="{'activebarpoint':(anxietyintencity==6)}" (click)="anxietychangeIntencity(6)">6</a>
+                    <a href="javascript:(0)" name="7"  [ngClass]="{'activebarpoint':(anxietyintencity==7)}" (click)="anxietychangeIntencity(7)">7</a>
+                    <a href="javascript:(0)" name="8"  [ngClass]="{'activebarpoint':(anxietyintencity==8)}" (click)="anxietychangeIntencity(8)">8</a>
+                    <a href="javascript:(0)" name="9"  [ngClass]="{'activebarpoint':(anxietyintencity==9)}" (click)="anxietychangeIntencity(9)">9</a>
+                    <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(anxietyintencity==10)}" (click)="anxietychangeIntencity(10)">10</a>
+                  </div><!--rBar ends-->
+                  <input class="br-current-rating" type="text" value="0"/>
+                  <div class="rBarStatus"><span class="rbsLeft">Annoyed</span> <span class="rbsRight">Enraged</span></div>
+              </div><!--rWidget ends-->
+            </div><!--reviewCase ends-->
+            
+            <div class="reviewCase">
+              <p class="rQuestion">How common is this reaction for you?:</p>
+              <div class="rWidget">
+                  <div class="rBar">
+                    <a href="javascript:(0)" name="1" [ngClass]="{'activebarpoint':(anxietyreaction==1)}" (click)="anxietychangeReaction(1)">1</a>
+                    <a href="javascript:(0)" name="2" [ngClass]="{'activebarpoint':(anxietyreaction==2)}" (click)="anxietychangeReaction(2)">2</a>
+                    <a href="javascript:(0)" name="3" [ngClass]="{'activebarpoint':(anxietyreaction==3)}" (click)="anxietychangeReaction(3)">3</a>
+                    <a href="javascript:(0)" name="4" [ngClass]="{'activebarpoint':(anxietyreaction==4)}" (click)="anxietychangeReaction(4)">4</a>
+                    <a href="javascript:(0)" name="5" [ngClass]="{'activebarpoint':(anxietyreaction==5)}" (click)="anxietychangeReaction(5)">5</a>
+                    <a href="javascript:(0)" name="6" [ngClass]="{'activebarpoint':(anxietyreaction==6)}" (click)="anxietychangeReaction(6)">6</a>
+                    <a href="javascript:(0)" name="7" [ngClass]="{'activebarpoint':(anxietyreaction==7)}" (click)="anxietychangeReaction(7)">7</a>
+                    <a href="javascript:(0)" name="8" [ngClass]="{'activebarpoint':(anxietyreaction==8)}" (click)="anxietychangeReaction(8)">8</a>
+                    <a href="javascript:(0)" name="9" [ngClass]="{'activebarpoint':(anxietyreaction==9)}" (click)="anxietychangeReaction(9)">9</a>
+                    <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(anxietyreaction==10)}" (click)="anxietychangeReaction(10)">10</a>
+                  </div><!--rBar ends-->
+                  <input class="br-current-rating" type="text" value="0"/>
+                  <div class="rBarStatus"><span class="rbsLeft">Not Common</span> <span class="rbsRight">Very Common</span></div>
+              </div><!--rWidget ends-->
+            </div><!--reviewCase ends--> <!--reviewCase ends-->
+            
+            <div class="reviewCase">
+              <p class="rQuestion">How much stress did this create for you?:</p>
+              <div class="rWidget">
+                  <div class="rBar" id="myCheck">
+                    <a href="javascript:(0)" name="1" [ngClass]="{'activebarpoint':(anxietystres_created==1)}" (click)="anxietychangeStresscreated(1)">1</a>
+                    <a href="javascript:(0)" name="2" [ngClass]="{'activebarpoint':(anxietystres_created==2)}" (click)="anxietychangeStresscreated(2)">2</a>
+                    <a href="javascript:(0)" name="3" [ngClass]="{'activebarpoint':(anxietystres_created==3)}" (click)="anxietychangeStresscreated(3)">3</a>
+                    <a href="javascript:(0)" name="4" [ngClass]="{'activebarpoint':(anxietystres_created==4)}" (click)="anxietychangeStresscreated(4)">4</a>
+                    <a href="javascript:(0)" name="5" [ngClass]="{'activebarpoint':(anxietystres_created==5)}" (click)="anxietychangeStresscreated(5)">5</a>
+                    <a href="javascript:(0)" name="6" [ngClass]="{'activebarpoint':(anxietystres_created==6)}" (click)="anxietychangeStresscreated(6)">6</a>
+                    <a href="javascript:(0)" name="7" [ngClass]="{'activebarpoint':(anxietystres_created==7)}" (click)="anxietychangeStresscreated(7)">7</a>
+                    <a href="javascript:(0)" name="8" [ngClass]="{'activebarpoint':(anxietystres_created==8)}" (click)="anxietychangeStresscreated(8)">8</a>
+                    <a href="javascript:(0)" name="9" [ngClass]="{'activebarpoint':(anxietystres_created==9)}" (click)="anxietychangeStresscreated(8)">9</a>
+                    <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(anxietystres_created==10)}" (click)="anxietychangeStresscreated(10)">10</a>
+                  </div><!--rBar ends-->
+                  <input class="br-current-rating" type="text" value="0"/>
+                  <div class="rBarStatus"><span class="rbsLeft">Not Common</span> <span class="rbsRight">Very Common</span></div>
+              </div><!--rWidget ends-->
+            </div><!--reviewCase ends-->
+            
+            <div class="reviewCase">
+              <p class="rQuestion">How much stress do you percieve this caused for others?:</p>
+              <div class="rWidget">
+                  <div class="rBar">
+                    <a href="javascript:(0)" name="1" [ngClass]="{'activebarpoint':(anxietystres_percieved==1)}" (click)="anxietychangeStresPercived(1)">1</a>
+                    <a href="javascript:(0)" name="2" [ngClass]="{'activebarpoint':(anxietystres_percieved==2)}" (click)="anxietychangeStresPercived(2)">2</a>
+                    <a href="javascript:(0)" name="3" [ngClass]="{'activebarpoint':(anxietystres_percieved==3)}" (click)="anxietychangeStresPercived(3)">3</a>
+                    <a href="javascript:(0)" name="4" [ngClass]="{'activebarpoint':(anxietystres_percieved==4)}" (click)="anxietychangeStresPercived(4)">4</a>
+                    <a href="javascript:(0)" name="5" [ngClass]="{'activebarpoint':(anxietystres_percieved==5)}" (click)="anxietychangeStresPercived(5)">5</a>
+                    <a href="javascript:(0)" name="6" [ngClass]="{'activebarpoint':(anxietystres_percieved==6)}" (click)="anxietychangeStresPercived(6)">6</a>
+                    <a href="javascript:(0)" name="7" [ngClass]="{'activebarpoint':(anxietystres_percieved==7)}" (click)="anxietychangeStresPercived(7)">7</a>
+                    <a href="javascript:(0)" name="8" [ngClass]="{'activebarpoint':(anxietystres_percieved==8)}" (click)="anxietychangeStresPercived(8)">8</a>
+                    <a href="javascript:(0)" name="9" [ngClass]="{'activebarpoint':(anxietystres_percieved==9)}" (click)="anxietychangeStresPercived(9)">9</a>
+                    <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(anxietystres_percieved==10)}" (click)="anxietychangeStresPercived(10)">10</a>
+                  </div><!--rBar ends-->
+                  <input class="br-current-rating" type="text" value="0"/>
+                  <div class="rBarStatus"><span class="rbsLeft">Not Common</span> <span class="rbsRight">Very Common</span></div>
+              </div><!--rWidget ends-->
+            </div><!--reviewCase ends-->
+            
+            <div class="concludingQuestion"><p>What is the take away from the situation to help you create healthier patterns?</p></div><!--concludingQuestion ends-->
+            
+            <div class="concludingMessage"><p>Well done! You have completed the S.O.S. process for this incident!  Consider making a note in your Thought Journal for future reference </p>
+            
+            <button class="btn" (click)="thoughtJournal()">Thought Journal</button>
+            <button class="btn" (click)="resetMindset()">Reset Mindset</button>
+            </div><!--concludingQuestion ends-->
+          </div><!--discontentTabs ends-->
+
+          <div id="lonelinessMeterTabs" class="meterTabsContent">
+        
+            
+            <div class="reviewCase">
+              <p class="rQuestion">Rate the intensity of your Discount:</p>
+              <div class="rWidget">
+                  <div class="rBar">
+                    <a href="javascript:(0)" name="1"  [ngClass]="{'activebarpoint':(lonelinessintencity==1)}" (click)="lonelinesschangeIntencity(1)">1</a>
+                    <a href="javascript:(0)" name="2"  [ngClass]="{'activebarpoint':(lonelinessintencity==2)}" (click)="lonelinesschangeIntencity(2)">2</a>
+                    <a href="javascript:(0)" name="3"  [ngClass]="{'activebarpoint':(lonelinessintencity==3)}" (click)="lonelinesschangeIntencity(3)">3</a>
+                    <a href="javascript:(0)" name="4"  [ngClass]="{'activebarpoint':(lonelinessintencity==4)}" (click)="lonelinesschangeIntencity(4)">4</a>
+                    <a href="javascript:(0)" name="5"  [ngClass]="{'activebarpoint':(lonelinessintencity==5)}" (click)="lonelinesschangeIntencity(5)">5</a>
+                    <a href="javascript:(0)" name="6"  [ngClass]="{'activebarpoint':(lonelinessintencity==6)}" (click)="lonelinesschangeIntencity(6)">6</a>
+                    <a href="javascript:(0)" name="7"  [ngClass]="{'activebarpoint':(lonelinessintencity==7)}" (click)="lonelinesschangeIntencity(7)">7</a>
+                    <a href="javascript:(0)" name="8"  [ngClass]="{'activebarpoint':(lonelinessintencity==8)}" (click)="lonelinesschangeIntencity(8)">8</a>
+                    <a href="javascript:(0)" name="9"  [ngClass]="{'activebarpoint':(lonelinessintencity==9)}" (click)="lonelinesschangeIntencity(9)">9</a>
+                    <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(lonelinessintencity==10)}" (click)="lonelinesschangeIntencity(10)">10</a>
+                  </div><!--rBar ends-->
+                  <input class="br-current-rating" type="text" value="0"/>
+                  <div class="rBarStatus"><span class="rbsLeft">Annoyed</span> <span class="rbsRight">Enraged</span></div>
+              </div><!--rWidget ends-->
+            </div><!--reviewCase ends-->
+            
+            <div class="reviewCase">
+              <p class="rQuestion">How common is this reaction for you?:</p>
+              <div class="rWidget">
+                  <div class="rBar">
+                    <a href="javascript:(0)" name="1" [ngClass]="{'activebarpoint':(lonelinessreaction==1)}" (click)="lonelinesschangeReaction(1)">1</a>
+                    <a href="javascript:(0)" name="2" [ngClass]="{'activebarpoint':(lonelinessreaction==2)}" (click)="lonelinesschangeReaction(2)">2</a>
+                    <a href="javascript:(0)" name="3" [ngClass]="{'activebarpoint':(lonelinessreaction==3)}" (click)="lonelinesschangeReaction(3)">3</a>
+                    <a href="javascript:(0)" name="4" [ngClass]="{'activebarpoint':(lonelinessreaction==4)}" (click)="lonelinesschangeReaction(4)">4</a>
+                    <a href="javascript:(0)" name="5" [ngClass]="{'activebarpoint':(lonelinessreaction==5)}" (click)="lonelinesschangeReaction(5)">5</a>
+                    <a href="javascript:(0)" name="6" [ngClass]="{'activebarpoint':(lonelinessreaction==6)}" (click)="lonelinesschangeReaction(6)">6</a>
+                    <a href="javascript:(0)" name="7" [ngClass]="{'activebarpoint':(lonelinessreaction==7)}" (click)="lonelinesschangeReaction(7)">7</a>
+                    <a href="javascript:(0)" name="8" [ngClass]="{'activebarpoint':(lonelinessreaction==8)}" (click)="lonelinesschangeReaction(8)">8</a>
+                    <a href="javascript:(0)" name="9" [ngClass]="{'activebarpoint':(lonelinessreaction==9)}" (click)="lonelinesschangeReaction(9)">9</a>
+                    <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(lonelinessreaction==10)}" (click)="lonelinesschangeReaction(10)">10</a>
+                  </div><!--rBar ends-->
+                  <input class="br-current-rating" type="text" value="0"/>
+                  <div class="rBarStatus"><span class="rbsLeft">Not Common</span> <span class="rbsRight">Very Common</span></div>
+              </div><!--rWidget ends-->
+            </div><!--reviewCase ends--> <!--reviewCase ends-->
+            
+            <div class="reviewCase">
+              <p class="rQuestion">How much stress did this create for you?:</p>
+              <div class="rWidget">
+                  <div class="rBar" id="myCheck">
+                    <a href="javascript:(0)" name="1" [ngClass]="{'activebarpoint':(lonelinessstres_created==1)}" (click)="lonelinesschangeStresscreated(1)">1</a>
+                    <a href="javascript:(0)" name="2" [ngClass]="{'activebarpoint':(lonelinessstres_created==2)}" (click)="lonelinesschangeStresscreated(2)">2</a>
+                    <a href="javascript:(0)" name="3" [ngClass]="{'activebarpoint':(lonelinessstres_created==3)}" (click)="lonelinesschangeStresscreated(3)">3</a>
+                    <a href="javascript:(0)" name="4" [ngClass]="{'activebarpoint':(lonelinessstres_created==4)}" (click)="lonelinesschangeStresscreated(4)">4</a>
+                    <a href="javascript:(0)" name="5" [ngClass]="{'activebarpoint':(lonelinessstres_created==5)}" (click)="lonelinesschangeStresscreated(5)">5</a>
+                    <a href="javascript:(0)" name="6" [ngClass]="{'activebarpoint':(lonelinessstres_created==6)}" (click)="lonelinesschangeStresscreated(6)">6</a>
+                    <a href="javascript:(0)" name="7" [ngClass]="{'activebarpoint':(lonelinessstres_created==7)}" (click)="lonelinesschangeStresscreated(7)">7</a>
+                    <a href="javascript:(0)" name="8" [ngClass]="{'activebarpoint':(lonelinessstres_created==8)}" (click)="lonelinesschangeStresscreated(8)">8</a>
+                    <a href="javascript:(0)" name="9" [ngClass]="{'activebarpoint':(lonelinessstres_created==9)}" (click)="lonelinesschangeStresscreated(8)">9</a>
+                    <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(lonelinessstres_created==10)}" (click)="lonelinesschangeStresscreated(10)">10</a>
+                  </div><!--rBar ends-->
+                  <input class="br-current-rating" type="text" value="0"/>
+                  <div class="rBarStatus"><span class="rbsLeft">Not Common</span> <span class="rbsRight">Very Common</span></div>
+              </div><!--rWidget ends-->
+            </div><!--reviewCase ends-->
+            
+            <div class="reviewCase">
+              <p class="rQuestion">How much stress do you percieve this caused for others?:</p>
+              <div class="rWidget">
+                  <div class="rBar">
+                    <a href="javascript:(0)" name="1" [ngClass]="{'activebarpoint':(lonelinessstres_percieved==1)}" (click)="lonelinesschangeStresPercived(1)">1</a>
+                    <a href="javascript:(0)" name="2" [ngClass]="{'activebarpoint':(lonelinessstres_percieved==2)}" (click)="lonelinesschangeStresPercived(2)">2</a>
+                    <a href="javascript:(0)" name="3" [ngClass]="{'activebarpoint':(lonelinessstres_percieved==3)}" (click)="lonelinesschangeStresPercived(3)">3</a>
+                    <a href="javascript:(0)" name="4" [ngClass]="{'activebarpoint':(lonelinessstres_percieved==4)}" (click)="lonelinesschangeStresPercived(4)">4</a>
+                    <a href="javascript:(0)" name="5" [ngClass]="{'activebarpoint':(lonelinessstres_percieved==5)}" (click)="lonelinesschangeStresPercived(5)">5</a>
+                    <a href="javascript:(0)" name="6" [ngClass]="{'activebarpoint':(lonelinessstres_percieved==6)}" (click)="lonelinesschangeStresPercived(6)">6</a>
+                    <a href="javascript:(0)" name="7" [ngClass]="{'activebarpoint':(lonelinessstres_percieved==7)}" (click)="lonelinesschangeStresPercived(7)">7</a>
+                    <a href="javascript:(0)" name="8" [ngClass]="{'activebarpoint':(lonelinessstres_percieved==8)}" (click)="lonelinesschangeStresPercived(8)">8</a>
+                    <a href="javascript:(0)" name="9" [ngClass]="{'activebarpoint':(lonelinessstres_percieved==9)}" (click)="lonelinesschangeStresPercived(9)">9</a>
+                    <a href="javascript:(0)" name="10" [ngClass]="{'activebarpoint':(lonelinessstres_percieved==10)}" (click)="lonelinesschangeStresPercived(10)">10</a>
+                  </div><!--rBar ends-->
+                  <input class="br-current-rating" type="text" value="0"/>
+                  <div class="rBarStatus"><span class="rbsLeft">Not Common</span> <span class="rbsRight">Very Common</span></div>
+              </div><!--rWidget ends-->
+            </div><!--reviewCase ends-->
+            
+            <div class="concludingQuestion"><p>What is the take away from the situation to help you create healthier patterns?</p></div><!--concludingQuestion ends-->
+            
+            <div class="concludingMessage"><p>Well done! You have completed the S.O.S. process for this incident!  Consider making a note in your Thought Journal for future reference </p>
+            
+            <button class="btn" (click)="thoughtJournal()">Thought Journal</button>
+            <button class="btn" (click)="resetMindset()">Reset Mindset</button>
+            </div><!--concludingQuestion ends-->
+          </div><!--discontentTabs ends-->
+
+        </div><!--matrContainer-->
+      
+        
+        <div class="clear"></div> 
+        </div><!--mainContainer-->
+        
+        <div class="clear"></div> 
+    </div><!-- .pagecontainer -->
+</ion-content>
+
+<app-footer></app-footer>

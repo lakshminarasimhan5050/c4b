@@ -1,0 +1,44 @@
+ul.topSquares{}
+ul.topSquares li{width: 16.4%;
+    padding: 8px 1%;
+    overflow: hidden;
+    background: #ed6e2d;
+    background-size: 60%;
+    border: none;
+    border-radius: 10px;
+    float: left; display:inline-block;
+    margin-right: 0;}
+ul.topSquares li img{width:60%; margin:0 auto;}
+ul.topSquares li.active{margin-bottom: -10px; padding: 15px 1% 20px;}
+ul.topSquares li.active img{width:80%; margin:0 auto;}
+ul.topSquares li:nth-child(1){background:#ed6e2d;}
+ul.topSquares li:nth-child(2){background:#f4b13e;}
+ul.topSquares li:nth-child(3){background:#97c255;}
+ul.topSquares li:nth-child(4){background:#50a7db;}
+ul.topSquares li:nth-child(5){background:#2b035c;}
+ul.topSquares li:nth-child(6){background:#7f3f97;}
+ul.thinkKids{}
+ul.thinkKids > li{border: 2px solid #97c255; color: #fff; background: #053268;  text-transform: uppercase;  border-radius: 15px; display: block;  clear: both; margin-bottom: 10px;  font-size: 18px; font-weight: bold; }
+ul.thinkKids > li:first-child { background: #97c255;  color: #fff;  margin-top: -10px;   transition: width .3s;}
+ul.thinkKids > li:first-child h4{text-align:left;  font-size: 30px !important;}
+.dive{
+    display: none;
+    background: #254f81;
+    text-transform: uppercase;
+    border-radius: 15px;
+    padding: 12px 0px;
+    clear: both;
+    margin: 20px auto 40px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    width: 90%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+.vBanner{width:50%; clear:both; display:block; margin:0 auto; position:relative;}
+.vBanner .vFrame{width:50%; clear:both; display:block; }
+.tFrame{position:absolute; top:0; left: 0; width:100%; height:100%; clear:both; display:block; cursor:pointer;}
+// .tFrame img{width:100%; height:auto; background-color: #053268;padding-top: 6%;}
+.vtImage{  }
+.vtImage::after{content:""; height:50px; width:50px; clear:both; display:block; position:absolute; background: url(../../../../assets/images/playBtn.png); background-size: 100%; top: 45%; left: 45%;}

@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+.pagecontainer { min-height: 130%;}
+h4{margin:0;font-weight: bolder;}
+.summaryPopup{top:0; border: 4px solid #ed6e2d; width:100%;}
+.readToggle i { padding-top:0px; }
+
+a.subOptions{display:block; font-size:18px; color: #fff; background: #254f81;  text-transform: uppercase; border-radius: 15px; margin:10px auto; clear:both; font-weight:normal; padding:15px 0px; border:2px solid #2b035c; width: 90%;}
+
+.matrContainer.indigo {
+    border: 2px solid #2b035c;
+    padding: 0px;
+    border-radius: 15px;
+}
+
+.matrContainer.indigo .pageTitle {
+    background: #2b035c;
+    color: #fff;
+    padding: 10px 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    border-radius: 13px;
+    margin-top: -1px;
+    margin-bottom: 20px;
+}
+
+@media (min-width:768px){
+	
+	
+}
+
+/***************************************************************************grid*******************************/
+
+@-ms-viewport{width: device-width; }
+
+
+/*
+R #c00000
+O #ff6600
+Y #dccf07
+G #97c255
+B #50a7db
+I #2b035c
+V #7f3f97
+*/

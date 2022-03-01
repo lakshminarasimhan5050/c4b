@@ -1,0 +1,53 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <div class="pagecontainer pcmargin">
+    <div class="mainContainer">
+      <div class="matrContainer blue">
+        <div class="pageTitle">
+          <h4><span class="infoPopup"></span>BREATHWORK</h4>
+        </div>
+
+        <div class="pBanner">
+          <div class="vFrame" style="display: none;" id="tFrame">
+            <iframe
+              width="320"
+              height="250"
+              src="https://www.youtube.com/embed/y5IfmnqI2lE"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div  id="tImage">
+            <div class="banner-img">
+              <img src="../../../../assets/images/sm-breathwork.png" />
+              <div class="play-button"  (click)="playVideo()">
+                <img src="../../../assets/images/playBtn.png" />
+              </div>
+            </div>
+          </div>
+        
+        </div>
+        <div class="readMatterInr" id="readMatterInr">
+          <p>
+            This is about breathwork. Here you will find out about breathwork.
+            This is about breathwork. Here you will find out about breathwork.
+          </p>
+        </div>
+        <!--readMatterInr ends-->
+        <button class="deepDive yellow" id="deepDive" (click)="onheight()">
+          Deeper Dive
+        </button>
+        <button class="dive" id="dive" (click)="ofheight()">Dive Deeper</button>
+      </div>
+      <!--matrContainer-->
+
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!-- .pagecontainer -->
+</ion-content>
+
+<app-footer></app-footer>

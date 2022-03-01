@@ -1,0 +1,66 @@
+@charset "utf-8";
+h4{margin:0;font-weight: bolder;}
+.summaryPopup{top:0; width:100%;}
+
+a.subOptions{display:block; font-size:18px; color: #fff; background: #053268;  text-transform: uppercase; border-radius: 15px; margin:10px auto; clear:both; font-weight:normal; padding:15px 0px; border:2px solid #50a7db; width: 90%;}
+
+.matrContainer.blue {
+    padding: 0px;
+    border-radius: 15px;
+}
+
+.matrContainer.blue .pageTitle {
+    color: #fff;
+    padding: 10px 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    border-radius: 13px;
+    margin-top: -1px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 999;
+}
+.vBanner{width:50%; clear:both; display:block; margin:0 auto; position:relative;}
+.vBanner .vFrame{width:50%; clear:both; display:block; }
+.tFrame{position:absolute; top:0; left: 5px;; width:95%; height:100%; clear:both; display:block; cursor:pointer;}
+.tFrame img{width:90%; height:330px; background-color: #053268;padding-top: 6%;object-fit: contain;}
+.vtImage::after{content:""; height:50px; width:50px; clear:both; display:block; position:absolute; background: url(../../../../assets/images/playBtn.png); background-size: 100%; top:45%; left:45%;}
+
+.readMatterInr{color: #fff;display:block; font-size:18px;}
+.matrContainer .pBanner, .summaryPopup .pBanner{margin-bottom:80px; margin-top:-30px;}
+.dive{
+    display: none;
+    background: #254f81;
+    text-transform: uppercase;
+    border-radius: 15px;
+    padding: 12px 0px;
+    clear: both;
+    margin: 20px auto 40px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    width: 90%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+@media (min-width:768px){
+	
+	
+}
+
+/***************************************************************************grid*******************************/
+
+@-ms-viewport{width: device-width; }
+
+
+/*
+R #c00000
+O #ff6600
+Y #dccf07
+G #97c255
+B #50a7db
+I #2b035c
+V #7f3f97
+*/

@@ -1,0 +1,39 @@
+<ion-content>
+  <div class="loginPage">
+    <div class="pagecontainer">
+      <h1 class="mLogo">
+        <a><img src="../../../../assets/images/c4b-logo.png" /></a>
+      </h1>
+      <p class="thead">Login for first time!</p>
+      <form
+        #login="ngForm"
+        id="loginForm"
+        (ngSubmit)="first_time_login(login)"
+        autocomplete="off"
+      >
+        <input
+          [(ngModel)]="department_id"
+          name="department_id"
+          type="text"
+          placeholder="Department Id"
+        />
+        <input
+          [(ngModel)]="phone_number"
+          name="phone_number"
+          type="text"
+          placeholder="Phone Number"
+        />
+        <button class="sendOTP" (click)="sendOTP()">Send OTP Now</button>
+        <input [(ngModel)]="otp" name="otp" type="text" placeholder="OTP" />
+        <div class="keepSigned">
+          <input type="checkbox" /><label>Keep me signed in</label>
+        </div>
+        <input type="submit" value="GO!" />
+        <label class="form_error" *ngIf="err_msg !=''">{{err_msg}}</label>
+      </form>
+      <div class="clear"></div>
+    </div>
+    <!--pagecontainer ends-->
+  </div>
+  <!-- .loginPage -->
+</ion-content>

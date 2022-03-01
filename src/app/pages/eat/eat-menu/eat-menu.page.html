@@ -1,0 +1,51 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <!-- <body class="homePage"> -->
+  <div class="mainContainer">
+    <div class="pagecontainer">
+      <ul class="topSquares">
+        <li (click)="goto('/move-menu')">
+          <img src="../../../assets/images/moveIcon.jpg" />
+        </li>
+        <li (click)="goto('/think-menu')">
+          <img src="../../../assets/images/thinkIcon.jpg" />
+        </li>
+        <li class="active"><img src="../../../assets/images/eatIcon.jpg" /></li>
+        <li (click)="goto('/sleep-menu')">
+          <img src="../../../assets/images/sleepIcon.jpg" />
+        </li>
+        <li (click)="goto('/coping-menu')">
+          <img src="../../../assets/images/copeIcon.jpg" />
+        </li>
+        <li (click)="goto('/connect-menu')">
+          <img src="../../../assets/images/connectIcon.jpg" />
+        </li>
+      </ul>
+      <ul class="thinkKids">
+        <!--******************************************************************************************-->
+
+        <li (click)="presentModal()">
+          <h4>
+            <span class="infoPopup"
+              ><img src="../../../assets/images/aboutIconWhite.png" /></span
+            >Eat Well
+          </h4>
+        </li>
+        <li (click)="goto('/eat/balanced-plate')"><h4>BALANCED PLATE</h4></li>
+        <li (click)="goto('/eat/hydration101')"><h4>HYDRATION 101</h4></li>
+        <li (click)="goto('/eat/weight-management')">
+          <h4>HEALTH MANAGEMENT</h4>
+        </li>
+        <li (click)="goto('/eat/your-stats')"><h4>Goals & Stats</h4></li>
+      </ul>
+
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!--homePagecontainer ends-->
+  <div class="clear"></div>
+  <!-- </body> -->
+</ion-content>
+
+<app-footer></app-footer>

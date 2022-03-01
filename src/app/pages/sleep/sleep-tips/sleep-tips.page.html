@@ -1,0 +1,49 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <div class="pagecontainer pcmargin">
+    <div class="mainContainer">
+      <div class="matrContainer blue">
+        <div class="pageTitle">
+          <h4>
+            <span class="infoPopup"
+              ><img
+                (click)="presentModal()"
+                src="../../../../assets/images/aboutIconWhite.png" /></span
+            >Sleep Tips
+          </h4>
+        </div>
+
+        <div class="pBanner">
+          <img src="../../../../assets/images/sleepTips.jpg" />
+        </div>
+        <a
+          href="javascript:(0)"
+          class="subOptions"
+          (click)="goto('/why-it-matters')"
+          >Why it matters</a
+        >
+        <a href="javascript:(0)" class="subOptions" (click)="goto('/rhythm')"
+          >Respect the circadian rhythm</a
+        >
+        <a
+          href="javascript:(0)"
+          class="subOptions"
+          (click)="goto('/sleep-influencers')"
+          >Sleep INFLUENCERS</a
+        >
+        <a href="javascript:(0)" class="subOptions">Suggested Reading</a>
+        <a href="javascript:(0)" class="subOptions" (click)="goto('/natural')"
+          >Natural Remedies</a
+        >
+      </div>
+      <!--matrContainer-->
+
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!-- .pagecontainer -->
+</ion-content>
+
+<app-footer></app-footer>

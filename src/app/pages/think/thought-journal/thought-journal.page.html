@@ -1,0 +1,106 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+    <div class="pagecontainer pcmargin">
+      <div class="mainContainer">
+
+
+        <div class="matrContainer yellow">
+          
+          <div class="pageTitle" (click)="presentModal()"><h4><span class="infoPopup"><img src="../../../assets/images/aboutIconWhite.png"/></span>Thought Journal</h4>
+          
+           
+          </div>
+        
+        
+        <div class="observeCircle">
+        <svg viewBox="0 0 140 140" preserveAspectRatio="xMinYMin meet" id="ccircle">
+          <g>
+            <circle id="c0" r="35%" cx="50%" cy="50%" stroke="#31518d" stroke-width="2" stroke-opacity="1" fill-opacity="0" />
+          
+          <circle class="c1" id="angerMeter" r="10%" cx="50%" cy="15%" fill="#e2020a" stroke="#31518d" stroke-width="2" stroke-opacity="0"></circle>
+          <text id="c1T" class="angerMeter" x="50%" y="15%" text-anchor="middle" fill="#fff" dy=".3em">Anger</text>
+          
+          <circle class="c2" id="guiltMeter" r="10%" cx="78%" cy="28%" fill="#ec8a1d" stroke="#31518d" stroke-width="2" stroke-opacity="0"></circle>
+          <text id="c2T" class="guiltMeter" x="78%" y="28%" text-anchor="middle" fill="#fff" dy=".3em">Guilt</text>
+          
+          <circle class="c3" id="discontentMeter" r="10%" cx="85%" cy="55%" fill="#f6ad09" stroke="#31518d" stroke-width="2" stroke-opacity="0"></circle>
+          <text id="c3T" class="discontentMeter" x="85%" y="55%" text-anchor="middle" fill="#fff" dy=".3em">Discontent</text>
+          
+          <circle class="c4" id="envyMeter" r="10%" cx="68%" cy="79%" fill="#5b8426" stroke="#31518d" stroke-width="2" stroke-opacity="0"></circle>
+          <text id="c4T" class="envyMeter" x="68%" y="79%" text-anchor="middle" fill="#fff" dy=".3em">Envy</text>
+          
+          <circle class="c5" id="sadMeter" r="10%" cx="34%" cy="79%" fill="#3b9bcd" stroke="#31518d" stroke-width="2" stroke-opacity="0"></circle>
+          <text id="c5T" class="sadMeter" x="34%" y="79%" text-anchor="middle" fill="#fff" dy=".3em">Sad</text>
+          
+          <circle class="c6" id="anxietyMeter" r="10%" cx="15%" cy="55%" fill="#0759fd" stroke="#31518d" stroke-width="2" stroke-opacity="0"></circle>
+          <text id="c6T" class="anxietyMeter" x="15%" y="55%" text-anchor="middle" fill="#fff" dy=".3em">Anxiety</text>
+          
+          <circle class="c7" id="lonelinessMeter" r="10%" cx="22%" cy="28%" fill="#9a1fd2" stroke="#31518d" stroke-width="2" stroke-opacity="0"></circle>
+          <text id="c7T" class="lonelinessMeter" x="22%" y="28%" text-anchor="middle" fill="#fff" dy=".3em">Loneliness</text>
+          
+          </g>
+        </svg>
+        <div class="markingArrow">Mark It</div>
+        </div>
+        
+        
+        <div id="angerMeterTabs" class="meterTabsContent">
+          <button class="btn">Your Thought Log</button>
+        </div>
+        <!--AngerMeterTabs ends-->
+
+
+        <div id="guiltMeterTabs" class="meterTabsContent">
+          <button class="btn">Your Thought Log</button>
+        </div>
+        <!--guiltMeterTabs ends-->
+
+            <div id="discontentMeterTabs" class="meterTabsContent">
+              <button class="btn">Your Thought Log</button><!--deepDive ends-->
+            </div>
+            <!--discontentMeterTabs ends-->
+    
+            <div id="envyMeterTabs" class="meterTabsContent">
+              <button class="btn">Your Thought Log</button><!--deepDive ends-->
+            </div>
+            <!--envyMeterTabs ends-->
+    
+            <div id="sadMeterTabs" class="meterTabsContent">
+              <button class="btn">Your Thought Log</button><!--deepDive ends-->
+            </div>
+            <!--sadMeterTabs ends-->
+    
+            <div id="anxietyMeterTabs" class="meterTabsContent">
+              <button class="btn">Your Thought Log</button><!--deepDive ends-->
+            </div>
+            <!--anxietyMeterTabs ends-->
+    
+            <div id="lonelinessMeterTabs" class="meterTabsContent">
+              <button class="btn">Your Thought Log</button><!--deepDive ends-->
+            </div>
+            <!--lonelinessMeterTabs ends-->
+         
+        <p>Select any emotion to learn the behaviours</p>
+         
+        </div><!--matrContainer-->
+        
+        
+        
+        <!-- <div class="popOverlay"></div>
+        <div class="inCrisisPopup">
+        <div class="icOptions">
+        <div class="icAlert">You have indicated that you are in crisis. Would you like a message and your GPS location sent to your designated peer?</div>
+        <div class="icBtn"><a href="#">Yes, Send HELP!</a></div>
+        <div class="icBtn code4"><a href="index.html">No, I am Code 4</a></div>
+        </div>
+        </div> -->
+        
+        
+        </div><!--mainContainer-->
+        
+        <div class="clear"></div>
+    </div><!-- .pagecontainer -->
+</ion-content>
+
+<app-footer></app-footer>

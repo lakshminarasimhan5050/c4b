@@ -1,0 +1,54 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <!-- <body class="homePage"> -->
+  <div class="mainContainer">
+    <div class="pagecontainer">
+      <ul class="topSquares">
+        <li (click)="goto('/move-menu')">
+          <img src="../../../assets/images/moveIcon.jpg" />
+        </li>
+        <li (click)="goto('/think-menu')">
+          <img src="../../../assets/images/thinkIcon.jpg" />
+        </li>
+        <li (click)="goto('/eat-menu')">
+          <img src="../../../assets/images/eatIcon.jpg" />
+        </li>
+        <li (click)="goto('/sleep-menu')">
+          <img src="../../../assets/images/sleepIcon.jpg" />
+        </li>
+        <li (click)="goto('/coping-menu')">
+          <img src="../../../assets/images/copeIcon.jpg" />
+        </li>
+        <li class="active">
+          <img src="../../../assets/images/connectIcon.jpg" />
+        </li>
+      </ul>
+      <ul class="thinkKids">
+        <!--******************************************************************************************-->
+
+        <li (click)="presentModal()">
+          <h4>
+            <span class="infoPopup"
+              ><img src="../../../assets/images/aboutIconWhite.png" /></span
+            >CONNECT WELL
+          </h4>
+        </li>
+        <li (click)="goto('/connect/chat')"><h4>CHAT & MESSAGING</h4></li>
+        <li (click)="goto('/connect/cop')"><h4>COP LOGS</h4></li>
+        <li (click)="goto('/connect/funny')"><h4>FUNNY THING IS</h4></li>
+        <li (click)="goto('/connect/ourstory')"><h4>OUR STORIES</h4></li>
+        <li (click)="goto('/connect/peer')"><h4>PEER SUPPORT/ MENTOR</h4></li>
+        <li (click)="goto('/connect/sights')"><h4>SIGHTS & SOUND</h4></li>
+        <li (click)="goto('/connect/whats')"><h4>WHAT'S NEW(S)</h4></li>
+      </ul>
+
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!--homePagecontainer ends-->
+  <div class="clear"></div>
+  <!-- </body> -->
+</ion-content>
+
+<app-footer></app-footer>

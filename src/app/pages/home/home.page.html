@@ -1,0 +1,80 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <!-- <body class="homePage"> -->
+    <div class="pagecontainer pcmargin">
+    
+      <div class="mainContainer">
+
+        <!-- <div class="mcGraphics" *ngIf="dataServ.show_home == true"> -->
+          <div class="mcGraphics">
+        
+            <div class="logoContainer2"><h1><a href="#"><img src="../../../assets/images/c4b-logo.png"/></a></h1></div>
+             <div class="q1" title="q1" (click)="goto('/think-menu')">
+                <span class="qTitle">THINK</span>
+                <div class="qImg"><img src="../../../assets/images/think.png"/></div>
+               <div class="qOverlay">
+                   <span class="qiconShrink"><img src="../../../assets/images/moveIcon.jpg"/></span>
+                </div>
+             </div><!--q1 ends-->
+              
+              <div class="q2" title="q2" (click)="goto('/move-menu')">
+                <span class="qTitle">MOVE</span>
+                <div class="qImg"><img src="../../../assets/images/move.png"/></div>
+               <div class="qOverlay">
+                   <span class="qiconShrink"><img src="../../../assets/images/thinkIcon.jpg"/></span>
+                </div>
+              </div><!--q2 ends-->
+              
+              <div class="q3" title="q3" (click)="goto('/eat-menu')">        
+                <div class="qImg"><img src="../../../assets/images/eat.png"/></div>
+               <div class="qOverlay">
+                   <span class="qiconShrink"><img src="../../../assets/images/eatIcon.jpg"/></span>
+                </div>
+                <span class="qTitle">EAT</span>
+              </div><!--q3 ends-->
+              
+              <div class="q4" title="q4" (click)="goto('/sleep-menu')">        
+                <div class="qImg"><img src="../../../assets/images/sleep.png"/></div>
+               <div class="qOverlay">
+                   <span class="qiconShrink"><img src="../../../assets/images/sleepIcon.jpg"/></span>
+                </div>
+                <span class="qTitle">SLEEP</span>
+              </div><!--q4 ends-->
+            
+             <div class="q5 ab" title="q5"><div class="qOverlay" (click)="goto('/coping-menu')"><span class="qiconShrink"><img src="../../../assets/images/copeIcon.jpg"/></span><span class="qTitle">Coping Tools</span></div></div>
+             
+             <div class="q6 ab" title="q6" ><div class="qOverlay" (click)="goto('/connect-menu')"><span class="qiconShrink"><img src="../../../assets/images/connectIcon.jpg"/></span><span class="qTitle">Connect</span></div></div>
+             <div class="clear"></div> 
+
+        </div><!--mcGraphics ends-->
+        
+          
+             
+          <div class="mcButtons">
+          <a href="javascript:(0)" class="copingBtn" (click)="goto('/coping-menu')">Coping Tools</a>
+          <a href="javascript:(0)" class="communityBtn" (click)="goto('/connect-menu')">Connect</a>
+          </div>
+          
+          <!-- <div class="popOverlay"></div>
+          <div class="inCrisisPopup">
+          <div class="icOptions">
+          <div class="icAlert">You have indicated that you are in crisis. Would you like a message and your GPS location sent to your designated peer?</div>
+          <div class="icBtn"><a href="#">Yes, Send HELP!</a></div>
+          <div class="icBtn code4"><a href="javascript:(0)" (click)="goto('/home')">No, I am Code 4</a></div>
+          </div>
+          
+          </div> -->
+        <!-- </span> -->
+        
+        <div class="clear"></div>
+      </div><!--mainContainer-->
+    
+    <div class="clear"></div>
+      
+  </div> <!--homePagecontainer ends-->
+  <div class="clear"></div>
+    <!-- </body> -->
+</ion-content>
+
+<app-footer></app-footer>

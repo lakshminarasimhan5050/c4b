@@ -1,0 +1,70 @@
+@charset "utf-8";
+.pagecontainer {min-height:130%;}
+h4{margin:0;font-weight: bolder;}
+.summaryPopup{top:0; border: 4px solid #ed6e2d; width: 100%;}
+
+a.subOptions{display:block; font-size:18px; color: #fff; background: #053268;  text-transform: uppercase; border-radius: 15px; margin:10px auto; clear:both; font-weight:normal; padding:15px 0px; border:2px solid #ed6e2d; width: 90%;}
+
+.matrContainer.orange {
+    border: 2px solid #ed6e2d;
+    padding: 0px;
+    border-radius: 15px; background:#061c54;
+}
+
+.matrContainer.orange .pageTitle {
+    background: #ed6e2d;
+    color: #fff;
+    padding: 10px 0px;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: left;
+    border-radius: 13px;
+    margin-top: -1px;
+    margin-bottom: 20px;
+}
+
+
+.dpHead{clear:both; display:block; padding:2% 5%;}
+.dpHead .dphLeft{width:70%; float:left; margin-right:5%; color:#fff; text-align:left; font-size: 18px; line-height: 55px;}
+.dpHead .dphRight{width:25%; float:left; text-align:left; color:#fff; font-size:12px;}
+.dpHead .dphRight span.checkTick{ display:block; clear:both; text-align:center;}
+.dpHead .dphRight span.checkTick img{width:30%;}
+
+.moveActivity{clear:both; display:block; padding:2% 5%;}
+.moveActivity li{clear:both; display:block; margin-bottom:10px;}
+.moveActivity li::after{content:""; clear:both; display:block; height:1px; width:100%;}
+.moveActivity li .maLeft{width:75%; margin-right:5%; float:left; background: #053268;  border: 2px solid #ed6e2d; border-radius: 10px;
+   font-size:18px; text-transform:uppercase;  color:#fff; position:relative;}
+  .moveActivity li .maLeft a{display:block; padding:12px 0; color:#fff;} 
+.moveActivity li .maRight{width:15%; float:left;}
+.maLeft .checkTick{width:15%; display:inline-block; position:absolute; top:3px; left:15px} .maLeft .checkTick img{width:100%;}
+.maRight .moveCheckbox{width:45px; height:45px; background:#ed6e2d; border-radius:50%; display:block; clear:both;}
+.maRight .moveCheckbox img{width:70%; display:block; margin:0 auto; padding-top: 10px;}
+.maRight .moveCheckbox > img{display:none;}
+.maRight .moveCheckbox.active > img{display:block;}
+
+.activityProgressBar{clear:both; display:block; padding:2% 5%;}
+.activityProgressBar p{text-align:center; color:#fff; margin:10px auto; padding:0;}
+.apBar{background: #053268;  border: 2px solid #ed6e2d; border-radius: 10px;}
+.apBar .apBarProgress{background:#ed6e2d; height: 42px; border-radius: 4px;}
+
+
+@media (min-width:768px){
+	
+	
+}
+
+/***************************************************************************grid*******************************/
+
+@-ms-viewport{width: device-width; }
+
+
+/*
+R #c00000
+O #ed6e2d
+Y #f4b13e
+G #97c255
+B #50a7db
+I #2b035c
+V #7f3f97
+*/

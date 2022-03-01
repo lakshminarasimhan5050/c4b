@@ -1,0 +1,67 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <div class="pagecontainer pcmargin">
+    <div class="mainContainer">
+      <div class="matrContainer blue">
+        <div class="pageTitle">
+          <h4><span class="infoPopup"></span>Self Hypnosis</h4>
+        </div>
+
+        <div class="pBanner">
+          <div class="vFrame" style="display: none;" id="tFrame">
+            <iframe
+              width="320"
+              height="250"
+              src="https://www.youtube.com/embed/eCSmJKwNh7A"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div  id="tImage">
+            <div class="banner-img">
+              <img src="../../../../assets/images/s-respect-circadian-rhythm.png" />
+              <div class="play-button"  (click)="playVideo()">
+                <img src="../../../../assets/images/playBtn.png" />
+              </div>
+            </div>
+          </div>
+
+          
+
+         
+          <h3>About Self Hypnosis</h3>
+
+          <div class="">
+            <div class="readMatterInr">
+              <p>
+                This is about respect the circadian rhythm. This is about
+                respect the circadian rhythm. This is about respect the
+                circadian rhythm.
+              </p>
+              <!-- </p> -->
+            </div>
+            <!--readMatterInr ends-->
+            <button class="deepDive">Deeper Dive</button>
+            <!--deepDive ends-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--matrContainer-->
+
+    <div class="clear"></div>
+  </div>
+  <!-- .pagecontainer -->
+
+  <!-- <script>
+      function playVideo() {
+        document.getElementById("tFrame").style.display = "none";
+      }
+      </script> -->
+</ion-content>
+
+<app-footer></app-footer>

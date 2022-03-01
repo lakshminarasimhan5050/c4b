@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+.consider-options-page .mainContainer{background:#071c55; border-radius: 20px;}
+.fwBanner{clear:both; display:block;}
+.fwBanner img{width:100%; height:auto; clear:both; display:block;}
+
+.matrContainer.red{border: 4px solid #e2020a; padding:0px; border-radius:15px; background:#071c55;}
+.matrContainer.red .pageTitle{background: #e2020a;  color: #fff;  padding: 10px 0px;  font-size: 20px; text-transform:uppercase; text-align: center;  border-radius: 13px;  margin-top: -1px; margin-bottom: 20px;}
+
+.consider-options-page a.backBtn{width:80%;}
+
+@media (min-width:768px){
+	
+	
+}
+
+/***************************************************************************grid*******************************/
+
+@-ms-viewport{width: device-width; }
+
+
+/*
+R #c00000
+O #ff6600
+Y #dccf07
+G #97c255
+B #50a7db
+I #2b035c
+V #7f3f97
+*/
+
+#angerMeterTabs button{background: #254f81;  text-transform: uppercase;border-radius: 10px; padding: 12px 0px; display: block;  clear: both;  margin: 20px auto 80px;
+    cursor: pointer; border: 2px solid #e2020a;  width: 90%; font-size: 20px;  font-weight: bold;  color: #fff; }
+#guiltMeterTabs button{background: #254f81;  text-transform: uppercase;border-radius: 10px; padding: 12px 0px; display: block;  clear: both;  margin: 20px auto 80px;
+    cursor: pointer; border: 2px solid #ee891c;  width: 90%; font-size: 20px;  font-weight: bold;  color: #fff; }
+#discontentTabs button{background: #254f81;  text-transform: uppercase;border-radius: 10px; padding: 12px 0px; display: block;  clear: both;  margin: 20px auto 80px;
+    cursor: pointer; border: 2px solid #f6ad09;  width: 90%; font-size: 20px;  font-weight: bold;  color: #fff; }
+#envyTabs button{background: #254f81;  text-transform: uppercase;border-radius: 10px; padding: 12px 0px; display: block;  clear: both;  margin: 20px auto 80px;
+    cursor: pointer; border: 2px solid #5a8423;  width: 90%; font-size: 20px;  font-weight: bold;  color: #fff; }
+#sadTabs button{background: #254f81;  text-transform: uppercase;border-radius: 10px; padding: 12px 0px; display: block;  clear: both;  margin: 20px auto 80px;
+    cursor: pointer; border: 2px solid #3b9bcd;  width: 90%; font-size: 20px;  font-weight: bold;  color: #fff; }
+#anxietyTabs button{background: #254f81;  text-transform: uppercase;border-radius: 10px; padding: 12px 0px; display: block;  clear: both;  margin: 20px auto 80px;
+    cursor: pointer; border: 2px solid #0559f7;  width: 90%; font-size: 20px;  font-weight: bold;  color: #fff; }
+#lonelyTabs button{background: #254f81;  text-transform: uppercase;border-radius: 10px; padding: 12px 0px; display: block;  clear: both;  margin: 20px auto 80px;
+    cursor: pointer; border: 2px solid #9a1fd2;  width: 90%; font-size: 20px;  font-weight: bold;  color: #fff; }

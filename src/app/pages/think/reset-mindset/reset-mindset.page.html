@@ -1,0 +1,41 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <div class="pagecontainer pcmargin">
+    <div class="mainContainer">
+      <div class="matrContainer yellow">
+        <div class="pageTitle">
+          <h4>
+            <span class="infoPopup" (click)="presentModal()"><img src="../../../assets/images/aboutIconWhite.png" /></span
+            >Reset Mindset
+          </h4>
+        
+  
+        </div>
+
+        <div class="pBanner">
+          <img src="../../../assets/images/quick-sos.jpg" />
+        </div>
+        <a
+          href="javascript:(0)"
+          class="subOptions"
+          (click)="goto('/think/stop')"
+          >SOS PROCESS</a
+        >
+        <a href="javascript:(0)" class="subOptions" (click)="dbrief()"
+          >Debrief</a
+        >
+      </div>
+      <!--matrContainer-->
+    </div>
+    <!-- .mainContainer -->
+    <div class="clear"></div>
+  </div>
+  <!-- pagecontainer -->
+</ion-content>
+<app-footer></app-footer>
+
+
+
+         
+         

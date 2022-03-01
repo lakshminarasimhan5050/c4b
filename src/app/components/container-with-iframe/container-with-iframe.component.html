@@ -1,0 +1,35 @@
+<div>
+  <div class="pagecontainer pcmargin">
+
+    <div class="mainContainer">
+      <div [style.border]="containerInfo.borderColorCode" class="matrContainer blue">
+        <div [hidden]="containerInfo.header === ''" [style.background]="containerInfo.headerColorCode" class="pageTitle">
+          <h4><span class="infoPopup"></span>{{containerInfo.header}}</h4>
+        </div>
+        <div [hidden]="containerInfo.iframe_src === ''" class="pBanner">
+          <div class="vFrame" id="vFrame">
+             <iframe width="320" height="250" [class.thumbnail]="thumbnail" [src]="safeSrc"
+              [title]="containerInfo.iframe_title" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+             
+
+
+            </div>
+          <div class="" id="tFrame" (click)="playVideo()">
+            <div class="vtImage"><img [src]="containerInfo.iframe_upper_img_src"></div>
+          </div>
+        </div>
+        <div #mainContext class="readMatterInr" style="padding: 0;" [innerHtml]="containerInfo.content"></div>
+        <div [hidden]="!containerInfo.show_add_my_routine_btn" class="add2routine">
+          <span class="emptyHeart"><img src="../../../assets/images/move-heart.png" /></span>
+          <p>Add to my routine</p>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <button [hidden]="hideDiveDeeperBtn" class="deepDive yellow" id="deepDive" (click)="diveDeeper()">{{diveDeeperTxt}}</button>
+      <div style="height: 50px;"></div>
+    </div>
+  </div>
+</div>

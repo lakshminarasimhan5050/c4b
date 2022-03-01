@@ -1,0 +1,28 @@
+
+<ion-content>
+
+  <div class="summaryPopup">
+    <span class="closePopup" class="closePopup" (click)="closeModal()">X</span>
+    <h3>About Move Well</h3>
+    <div class="pBanner"><div class="vFrame">
+      <iframe id="aboutvideo" width="560" height="315" src="https://www.youtube.com/embed/y5IfmnqI2lE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <!-- <iframe id="aboutvideo" width="560" height="315" src="https://www.youtube.com/embed/y5IfmnqI2lE" title="YouTube video player" frameborder="0" allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe> -->
+    </div>
+    <div class="summaryPoster tFrame" id="tFrame"><div class="vtImage" id="vtImage" (click)="playvideo()"><img  src="../../../assets/images/move-Banner.jpg"/></div></div>
+    </div>
+    <!-- <div class="summaryPoster"><img  width="560" height="315" src="../../../assets/images/move.png"/></div> -->
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/y5IfmnqI2lE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  -->
+    <!--<div class="readToggle"><img src="../../../assets/images/readText-icon.png" class="readIcon"/><i>X</i></div>-->
+    <div class="">
+      <div class="readMatterInr" id="readMatterInr">
+
+    <h6>Welcome to Move Well <br/> Here you will learn:</h6>
+    <p>Focuses on taking care of your body and finding fitness routines that fit your lifestyle. Whether you have an existing fitness routine or are looking for new ways to move and stay active, you will find many resources here: resistance training, cardiovascular conditioning, yoga, biohacks, stretches and tips to manage discomfort and pain. </p>
+  </div>
+    <button class="deepDive yellow"id="deepDive" (click)="onheight()">Deeper Dive</button>
+    <button class="dive" id="dive" (click)="ofheight()">Dive Deeper</button>
+
+    </div><!--readMatter ends--> 
+    </div>
+</ion-content>
+

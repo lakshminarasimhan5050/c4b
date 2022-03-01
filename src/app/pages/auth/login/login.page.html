@@ -1,0 +1,37 @@
+<ion-content>
+  <div class="loginPage">
+    <div class="pagecontainer">
+      <h1 class="mLogo">
+        <a><img src="../../../../assets/images/c4b-logo.png" /></a>
+      </h1>
+      <p class="thead">Already have an account!</p>
+      <form
+        #login="ngForm"
+        id="loginForm"
+        (ngSubmit)="loginCheck(login)"
+        autocomplete="off"
+      >
+        <input
+          [(ngModel)]="user_id"
+          name="user_id"
+          type="text"
+          placeholder="User Id"
+        />
+        <input
+          [(ngModel)]="password"
+          name="password"
+          type="password"
+          placeholder="Password"
+        />
+        <div class="keepSigned">
+          <input type="checkbox" /><label>Keep me signed in</label>
+        </div>
+        <input type="submit" value="GO!" />
+        <label class="form_error" *ngIf="err_msg !=''">{{err_msg}}</label>
+      </form>
+      <div class="clear"></div>
+    </div>
+    <!--pagecontainer ends-->
+  </div>
+  <!-- .loginPage -->
+</ion-content>

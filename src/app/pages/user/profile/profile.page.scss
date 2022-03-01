@@ -1,0 +1,16 @@
+.myProfileSet input[type="text"], .myProfileSet input[type="tel"], .myProfileSet input[type="password"] {
+    width: 100%;
+}
+
+.myProfileSet input[type="password"] {
+    background: #f1f1f1;
+    border: none;
+    border-radius: 4px;
+    padding: 5% 5%;
+    color: #053268;
+    text-align: left;
+    display: block;
+    clear: both;
+    margin: 10px auto;
+    font-family: 'source_sans_proregular';
+}

@@ -1,0 +1,35 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <div class="pagecontainer pcmargin">
+    <div class="mainContainer">
+      <div class="matrContainer green">
+        <div class="pageTitle" (click)="presentModal()">
+          <h4>
+            <span class="infoPopup"
+              ><img src="../../../../assets/images/aboutIconWhite.png" /></span
+            >Hydration
+          </h4>
+        </div>
+
+        <div class="pBanner">
+          <img src="../../../../assets/images/hydration.jpg" />
+        </div>
+        <!--<p>HYDRATION 101offers an easy tool to track how much water you drink.</p>-->
+
+        <ul class="hydrationInrKids">
+          <li><a>HYDRATION BASICS</a></li>
+          <li><a>DEHYDRATION</a></li>
+          <!-- <li> <a >Ambient Noise</a></li>
+              <li><a > Binaural Beats</a></li> -->
+        </ul>
+      </div>
+      <!--matrContainer-->
+
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!-- .pagecontainer -->
+</ion-content>
+
+<app-footer></app-footer>
